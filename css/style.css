@@ -1,7 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-
+  padding: 0 10px;
 }
 
 
@@ -15,6 +15,9 @@
   align-items: center;
   position: fixed;
   margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
 }
 
 
@@ -22,11 +25,14 @@
   border-radius: 1000px;
   background: #0B0D0F;
   max-height: 43px;
+
 }
 
 
 .header__nav-list {
   display: flex;
+
+  gap: 4px;
 }
 
 
@@ -52,46 +58,60 @@
   border-radius: 56px;
   background: #6CDEBB;
   display: flex;
-  padding: 14px 18px;
+  padding: 14px 17px;
   align-items: center;
 }
+
+
+
 
 .offer__content {
   height: 100vh;
   background-image: url("../images/backgroundOffer.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   padding-top: 128px;
+  border-radius: 0px 0px 60px 60px;
 }
 
 
+.offer__content-text {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  max-width: 750px;
+  margin: 0 auto 37px;
+}
 
 .offer__title {
   color: #D5DFE9;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: 111.5%;
-  max-width: 750px;
   letter-spacing: 1.28px;
-  margin: 0 auto 22px;
+  margin-bottom: 23px;
+  position: relative;
 }
+
+.offer__title::before {
+  content: url('../images/lineTitleOffer.svg');
+  position: absolute;
+  left: 1.7%;
+  top: 17.3%;
+}
+
+
 
 
 .offer__span {
   color: rgba(213, 223, 233, 0.50);
-  text-align: center;
-  font-family: 'Lato', sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   display: inline-block;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 42px;
+
 }
 
 
@@ -99,12 +119,243 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 303px;
+  position: relative;
 }
 
 
-.offer__button {}
+.offer__buttons::before {
+  content: url("../images/sun.svg");
+  position: absolute;
+  right: 17.5%;
+  top: -158%;
+}
 
 
-.offer__button-choice {}
 
-.offer__button-see {}
+.offer__buttons::after {
+  content: url("../images/blueCar.png");
+  position: absolute;
+  top: 256%;
+  left: 23.8%;
+}
+
+
+
+
+
+.offer__button {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Lato', sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  border-radius: 16px;
+  font-style: normal;
+  letter-spacing: 0.14px;
+}
+
+
+.offer__button-choice {
+  border: 3px solid #325F55;
+  background: #6CDEBB;
+  margin-right: 29px;
+  color: #1D1F23;
+  font-size: 13px;
+  font-weight: 700;
+  width: 171px;
+  height: 55px;
+
+}
+
+.offer__button-see {
+  border: 0;
+  background: #3E424B;
+  color: #D5DFE9;
+  width: 170px;
+  height: 50px;
+  font-size: 13px;
+
+  font-weight: 600;
+  line-height: normal;
+}
+
+.offer__button-see::before {
+  content: url('../images/playVIdeo.svg');
+  display: block;
+}
+
+.offer__service-items {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.offer__service-items::after {
+  content: url("../images/lines.svg");
+  position: absolute;
+  left: 22.7%;
+  top: -57%;
+}
+
+
+
+
+
+.offer__service-item {
+  width: 170px;
+  height: 186px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(62, 66, 75, 0.50);
+  backdrop-filter: blur(12px);
+  color: #FFF;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 28px;
+}
+
+.offer__service-item-notdrive,
+.offer__service-item-discounts {
+  padding: 28px 40px 0;
+}
+
+.offer__service-item-cars::before {
+  content: url('../images/service/car.svg');
+  margin: 0 auto 7px;
+  display: block;
+}
+
+.offer__service-item-unchear::before {
+  content: url('../images/service/unchear.png');
+  margin: 0 auto 7px;
+  display: block;
+}
+
+.offer__service-item-notdrive::before {
+  content: url('../images/service/notDriver.png');
+  margin: 0 auto 7px;
+  display: block;
+}
+
+.offer__service-item-service::before {
+  content: url('../images/service/corporateService.png');
+  margin: 0 auto 7px;
+  display: block;
+}
+
+.offer__service-item-discounts::before {
+  content: url('../images/service/discounts.png');
+  margin: 0 auto 7px;
+  display: block;
+}
+
+
+
+
+.about {
+  position: relative;
+  z-index: 500;
+  background-color: #000000;
+}
+
+.about__content {
+  padding: 200px 0 235px;
+}
+
+.about__title {
+  color: #D5DFE9;
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.5%;
+  height: 71px;
+  letter-spacing: 0.96px;
+  position: relative;
+}
+
+
+.about__title::before {
+  content: url('../images/aboutStroke.svg');
+  position: absolute;
+  top: -22%;
+  left: -11%;
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+
+.about__text {
+  color: #D5DFE9;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111.5%;
+  letter-spacing: 0.44px;
+  max-width: 970px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.about__text-top {
+  margin-bottom: 25px;
+}
+
+.about__bottom {
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+
+.about__bottom p {
+  width: 309px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+}
+
+.about__possibilities-departure,
+.about__possibilities-accessories {
+  display: flex;
+  width: 470px;
+  padding: 30px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 30px;
+  background: #16191D;
+  padding: 30px;
+  position: relative;
+}
+
+.about__possibilities-departure::before {
+  content: url("../images/flagGeorgia.png");
+}
+
+.about__possibilities-accessories::before {
+  content: url("../images/tools.png");
+}
