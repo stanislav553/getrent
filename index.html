@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GETRENT</title>
+  <title>getRent</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,34 +14,36 @@
 
 <body>
 
-
-
   <header>
     <div class="header">
       <div class="container">
         <div class="header__content">
+          <a href="#">
 
-          <img src="images/logo.png" alt="logo">
-          <div class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-element">
-                <a class="header__nav-link" href="#">О нас</a>
-              </li>
-              <li class="header__nav-element">
-                <a class="header__nav-link" href="#">Автопарк</a>
-              </li>
-              <li class="header__nav-element">
-                <a class="header__nav-link" href="#">Условия аренды</a>
-              </li>
-              <li class="header__nav-element">
-                <a class="header__nav-link" href="#">Интересные места</a>
-              </li>
-              <li class="header__nav-element">
-                <a class="header__nav-link" href="#">Контакты</a>
-              </li>
+            <img src="images/logo.png" class="logo" alt="logo">
+          </a>
 
+          <nav class="menu">
+
+            <ul class="menu-list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#about">О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Автопарк</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Условия аренды</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Интересные места</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Контакты</a>
+              </li>
             </ul>
-          </div>
+
+          </nav>
           <a class="phone" href="tel:+79999999999">+7 (999) 999 99-99</a>
           </di </div>
         </div>
@@ -49,46 +51,55 @@
 
   <main>
 
-    <section class="offer">
+    <section class="section__offer">
       <div class="offer__content">
         <div class="container">
+
           <div class="offer__content-text">
             <h1 class="offer__title">Надежный прокат авто
               во Владикавказе.</h1>
             <span class="offer__span">Сервисный подход к организации вашего передвижения.</span>
           </div>
-          <div class="offer__buttons">
-            <button class="offer__button offer__button-choice">Выбрать авто</button>
-            <button class="offer__button offer__button-see">Смотреть видео</button>
+
+
+          <div class="offer__links">
+            <a class="offer__link offer__link-choice">Выбрать авто</a>
+            <a class="offer__link offer__link-see">Смотреть видео</a>
           </div>
 
+          <div class="offer__content-inner">
 
-          <ul class="offer__service-items">
-            <li class="offer__service-item offer__service-item-cars">
-              <span class="offer__service-item-span">Современный автопарк</span>
-            </li>
-            <li class="offer__service-item offer__service-item-unchear ">
-              <span class="offer__service-item-span">Детское кресло бесплатно</span>
-            </li>
-            <li class="offer__service-item offer__service-item-notdrive ">
-              <span class="offer__service-item-span">Без водителя</span>
-            </li>
-            <li class="offer__service-item offer__service-item-service ">
-              <span class="offer__service-item-span">Корпоративный сервис</span>
-            </li>
-            <li class="offer__service-item offer__service-item-discounts ">
-              <span class="offer__service-item-span">Скидка 10%</span>
-            </li>
-          </ul>
+            <div class="offer__images">
+              <picture class="offer__picture">
+                <source class="offer__source">
+                <img class="offer__img-car" src="images/blueCar.png" alt="car">
+              </picture>
+            </div>
 
+            <ul class="offer__service-items">
+              <li class="offer__service-item offer__service-item-cars">
+                <span class="offer__service-item-span">Современный автопарк</span>
+              </li>
+              <li class="offer__service-item offer__service-item-unchear ">
+                <span class="offer__service-item-span">Детское кресло бесплатно</span>
+              </li>
+              <li class="offer__service-item offer__service-item-notdrive ">
+                <span class="offer__service-item-span">Без водителя</span>
+              </li>
+              <li class="offer__service-item offer__service-item-service ">
+                <span class="offer__service-item-span">Корпоративный сервис</span>
+              </li>
+              <li class="offer__service-item offer__service-item-discounts ">
+                <span class="offer__service-item-span">Скидка 10%</span>
+              </li>
+            </ul>
 
+          </div>
         </div>
       </div>
     </section>
 
-
-
-    <section class="about">
+    <section class="section__about" id="about">
       <div class="about__content">
         <div class="container">
 
@@ -99,56 +110,58 @@
 
           <div class="about__text">
 
-            <p class="about__text-top">Команда специалистов, миссией которых является организация оперативного  и
+            <p class="about__text-inner">Команда специалистов, миссией которых является организация оперативного  и
               качественного предоставления авто без
               водителя для любых целей.  Вы хотите познакомить семью с природой и культурой Кавказа или находитесь
               в рабочей командировке и нужно авто для передвижения?
-
-
-            </p>
-            <p class="about__text-bottom">
+              <br>
+              <br>
               Get Rent предоставит вам современный и заправленный автомобиль  с технической поддержкой с 8 до 23 часов,
               который
               скрасит ваши впечатления  от поездки
             </p>
           </div>
 
-
-
           <div class="about__bottom">
-            <div class="about__possibilities-departure">
 
+            <div class="about__possibilities-departure">
               <p class="about__possibilities-departure-text">
                 Беспроблемный выезд в Грузию и  в другие страны за территорией
                 РФ
               </p>
-
-
-
             </div>
 
             <div class="about__possibilities-accessories">
-
               <p class="about__possibilities-accessories-text">Предоставление любых аксессуаров для комфортной
-                эксплуатации</p>
-
-
+                эксплуатации
+              </p>
             </div>
 
-
           </div>
-
         </div>
       </div>
     </section>
 
+    <section class="section__choice">
+      <div class="container">
+        <div class="choice__content">
+          <h2 class="choice__title">
+            <span class="choice__title-span">
+              На любой вкус.
+            </span>
+            <span class="choice__title-span">
+              Выбирай и наслаждайся
+            </span>
+          </h2>
 
-
-
-
+          <img class="choice__img" src="images/ovalChoice.svg" alt="oval">
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer></footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
