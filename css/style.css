@@ -63,28 +63,40 @@
 }
 
 .section__offer {
+  background-color: #000000;
+}
+
+.offer__content {
   background-color: #0a0b0d;
   background-image: url(../images/backgroundOffer.png);
   background-repeat: no-repeat;
   background-position: center top;
-  border-radius: 0px 0px 60px 60px;
-  overflow: hidden;
-}
-
-.offer__content {
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 128px;
   border-radius: 0px 0px 60px 60px;
+  overflow: hidden;
+
 }
 
 .offer__content-text {
   text-align: center;
-
   font-style: normal;
   max-width: 750px;
   margin: 0 auto 38px;
+  position: relative;
 }
+
+
+
+.offer__title-line {
+  position: absolute;
+  top: 34.4%;
+  left: 1.6%;
+  rotate: -10deg;
+}
+
+
 
 .offer__title {
   margin-bottom: 22px;
@@ -97,12 +109,15 @@
   position: relative;
 }
 
-.offer__title::before {
+/* .offer__title::before {
   content: url(../images/lineTitleOffer.svg);
   position: absolute;
   left: 1.7%;
   top: 18.3%;
-}
+} */
+
+
+
 
 .offer__span {
   font-weight: 400;
@@ -121,17 +136,28 @@
   position: relative;
 }
 
-.offer__links::before {
+.offer__sun {
+
+  position: absolute;
+  bottom: -111%;
+  right: 17.4%;
+  rotate: 60deg;
+}
+
+
+/* .offer__links::before {
   content: url(../images/sun.svg);
   position: absolute;
   right: 17.5%;
   bottom: -115.7%;
-}
+} */
 
 .offer__link {
   width: 170px;
   cursor: pointer;
 }
+
+
 
 .offer__link-choice {
   background: #6CDEBB;
@@ -183,18 +209,32 @@
   position: relative;
 }
 
-.offer__images::before {
+.offer__lightnings {
+  position: absolute;
+  top: -18%;
+  left: 28%;
+  rotate: 20deg;
+}
+
+/* .offer__images::before {
   content: url(../images/lightnings.svg);
   position: absolute;
   top: -12%;
   left: 28%;
-}
+} */
 
-.offer__images::after {
+/* .offer__images::after {
   content: url(../images/lines.svg);
   position: absolute;
   top: 17%;
   left: 22.7%;
+} */
+
+.offer__lines {
+  position: absolute;
+  top: 17%;
+  left: 22.8%;
+  rotate: -20deg;
 }
 
 .offer__img-car {
@@ -209,7 +249,7 @@
   display: flex;
   gap: 30px;
   bottom: 213px;
-
+  opacity: 0;
 
 }
 
@@ -220,7 +260,6 @@
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.11);
   background: rgba(62, 66, 75, 0.50);
-  backdrop-filter: blur(12px);
   color: #FFF;
   text-align: center;
   font-size: 18px;
@@ -299,8 +338,8 @@
 
 .about__text {
   max-width: 970px;
-  margin: 0 auto 80px;
-  padding: 0 1px 0 0;
+  margin: 0 auto 84px;
+  padding: 0 100px 0 0;
 }
 
 .about__text-inner {
@@ -386,9 +425,10 @@
 
 
 
-
 .section__choice {
   padding: 334px 0 341px;
+  border-radius: 0px 0px 60px 60px;
+  background-color: #000000;
 }
 
 .choice__title {
