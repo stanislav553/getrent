@@ -427,11 +427,11 @@
 
 .section__choice {
   padding: 334px 0 341px;
-  border-radius: 0px 0px 60px 60px;
   background-color: #000000;
 }
 
-.choice__title {
+
+.choice__top__title {
   color: #D5DFE9;
   text-align: center;
   font-family: Lato;
@@ -443,17 +443,17 @@
   z-index: 100;
 }
 
-.choice__title-span {
+.choice__top-span {
   display: block;
   position: relative;
   z-index: 100;
 }
 
-.choice__title-span:first-child {
+.choice__top-span:first-child {
   letter-spacing: 3px;
 }
 
-.choice__title-span:first-child::before {
+.choice__top-span:first-child::before {
   content: url(../images/linesChoice.svg);
   position: absolute;
   top: -38%;
@@ -461,7 +461,7 @@
 
 }
 
-.choice__title-span:first-child::after {
+.choice__top-span:first-child::after {
   position: absolute;
   content: url(../images/choiceCrown.svg);
   bottom: 24%;
@@ -470,7 +470,7 @@
 
 
 
-.choice__title-span:last-child::after {
+.choice__top-span:last-child::after {
   content: url(../images/lightningsChoice.svg);
   position: absolute;
   right: 17.5%;
@@ -482,4 +482,183 @@
   position: relative;
   top: -64px;
   right: -47.2%;
+}
+
+.choice__bottom {
+  padding: 172px 117px 133px 134px;
+}
+
+.choice__bottom-list-cars {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: #D5DFE9;
+  margin-bottom: 64px;
+}
+
+.choice__bottom-item-car {
+  padding: 36px 23px 26px 30px;
+  border-radius: 30px;
+  background: #16191D;
+  width: 370px;
+}
+
+.choice__bottom-item-car:first-child {
+  padding: 32px 23px 26px 29px;
+}
+
+.choice__bottom-item-car:last-child {
+  padding: 36px 25px 26px 30px;
+}
+
+.choice__bottom-car-reservation-reno {
+  margin-bottom: 29px;
+}
+
+.choice__bottom-car-reservation-hyundai {
+  margin-bottom: 32px;
+}
+
+.choice__bottom-car-reservation-haval {
+  margin-bottom: 31px;
+}
+
+
+
+
+.choice__bottom-car-info {
+  display: flex;
+  width: 313px;
+  justify-content: space-between;
+  height: 54px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.choice__bottom-car-name {
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.5%;
+}
+
+.choice__bottom-car-name {
+  max-width: 180px;
+}
+
+.choice__bottom-car-span {
+  display: flex;
+  padding: 8px 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #6CDEBB;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.5%;
+}
+
+
+
+
+
+.choice__bottom-list_car-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding-right: 7px;
+  margin-bottom: 22px;
+}
+
+.choice__bottom-item-car-power,
+.choice__bottom-item-car-engine,
+.choice__bottom-item-car-capacity {
+  background-color: #272C34;
+  padding: 10px 14px 8px;
+  border-radius: 14px;
+}
+
+.choice__bottom-item-car-power::before {
+  content: url(../images/iconPower.svg);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.choice__bottom-item-car-engine::before {
+  content: url(../images/iconEngine.svg);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.choice__bottom-item-car-capacity::before {
+  content: url(../images/iconCapacity.svg);
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+.choice__bottom-item-car-power-title,
+.choice__bottom-item-car-engine-title,
+.choice__bottom-item-car-capacity-title {
+  align-self: stretch;
+  color: #66727E;
+  font-family: Lato;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.5%;
+  text-transform: uppercase;
+}
+
+
+
+
+.choice__bottom-item-link {
+  display: flex;
+  height: 55px;
+  padding: 16px 12px 16px 11px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 3px solid #366257;
+  background: #6CDEBB;
+  font-variant-numeric: lining-nums proportional-nums;
+  max-width: 313px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #1D1F23;
+  letter-spacing: -0.46px;
+}
+
+.choice__bottom-item-price {
+  padding: 6px 10px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #1D1F23;
+}
+
+.choice__bottom-link {
+  width: fit-content;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  font-weight: 700;
+  line-height: 139%;
+  transition: color 0.3s ease 0s;
+  color: #6F747A;
+  font-size: 22.5px;
+  font-style: normal;
+  margin: 0 auto;
+}
+
+.choice__bottom-link:hover {
+  color: #ffffff;
 }

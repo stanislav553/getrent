@@ -13,12 +13,17 @@ gsap.to('.offer__lines', {
   duration: 2
 })
 
-gsap.to('.offer__service-items', {
-  opacity: 1,
-  duration: 2
-})
+window.onscroll = function () {
+  if (window.scrollY >= 200) {
+    gsap.to('.offer__service-items', {
+      opacity: 1,
+      duration: 2
+    })
 
-gsap.to('.offer__service-item', {
-  duration: 2,
-  backdropFilter: 'blur(12px)'
-})
+    gsap.to('.offer__service-item', {
+      duration: 2,
+      backdropFilter: 'blur(12px)'
+    })
+  }
+}
+console.log(123)
