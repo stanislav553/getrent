@@ -26,3 +26,26 @@ window.onscroll = function () {
     })
   }
 }
+
+// const choice = document.querySelector('.choice__cars-content')
+
+// function getScrollAmount() {
+//   let choiceWidth = choice.scrollWidth
+//   return -(choiceWidth - window.innerWidth)
+// }
+
+// const tween = gsap.to(choice, {
+//   x: getScrollAmount,
+//   duration: 3,
+//   ease: 'none'
+// })
+
+// ScrollTrigger.create({
+//   trigger: '.section__choice-cars',
+//   start: 'top',
+//   end: () => `+=${getScrollAmount() * -1}`,
+//   pin: true,
+//   animation: tween,
+//   scrub: 1,
+//   invalidateOnRefresh: true
+// })

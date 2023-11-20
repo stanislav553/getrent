@@ -429,6 +429,7 @@
 .section__choice {
   padding: 334px 0 348px;
   background-color: #000000;
+  width: 100%;
 }
 
 .choice__content {
@@ -682,6 +683,7 @@
 .conditions__content {
   padding: 409px 410px 420px;
   background-color: #D5DFE9;
+  min-height: 110vh;
 }
 
 .conditions__title {
@@ -712,7 +714,7 @@
 
 
 
-.conditions__content-top {
+.conditions__content-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -733,7 +735,93 @@
   display: block;
 }
 
-
 main {
   overflow-x: hidden;
+}
+
+.choice__cars-content {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+
+.section__choice-cars {
+  background-color: #000000;
+}
+
+
+
+.requirements__content {
+  padding: 203px 225px 370px;
+  background-color: #D5DFE9;
+}
+
+.requirements__content-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.requirements__title-number,
+.requirements__title-text {
+  display: block;
+}
+
+.requirements__title-number {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #0B0D0F;
+  text-align: center;
+  font-family: Lato;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.5%;
+  letter-spacing: 1.28px;
+  margin-bottom: 23px;
+  background-color: #BCCAD9;
+  border-radius: 25px;
+}
+
+.requirements__title-text {
+  color: #0B0D0F;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.5%;
+  letter-spacing: 0.96px;
+}
+
+.requirements__items {
+  display: flex;
+  width: 470px;
+  padding: 30px 22px 30px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 30px;
+  background: #BCCAD9;
+}
+
+.requirements__item {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 30px;
+  background: #CAD8E6;
+  color: #0B0D0F;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 }
