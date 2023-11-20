@@ -26,4 +26,3 @@ window.onscroll = function () {
     })
   }
 }
-console.log(123)
