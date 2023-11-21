@@ -66,6 +66,8 @@ html {
 
 section {
   font-size: 100%;
+  min-width: 100vw;
+  width: 100%;
 }
 
 div {

@@ -1,9 +1,9 @@
-gsap.to('.offer__title-line, .offer__sun, .offer__lightnings', {
+gsap.to('.offer__title-line, .sun, .lightnings', {
   rotate: 0,
   duration: 2
 })
 
-gsap.to('.offer__lightnings', {
+gsap.to('.lightnings', {
   top: '-12%',
   duration: 2
 })
@@ -26,26 +26,3 @@ window.onscroll = function () {
     })
   }
 }
-
-// const choice = document.querySelector('.choice__cars-content')
-
-// function getScrollAmount() {
-//   let choiceWidth = choice.scrollWidth
-//   return -(choiceWidth - window.innerWidth)
-// }
-
-// const tween = gsap.to(choice, {
-//   x: getScrollAmount,
-//   duration: 3,
-//   ease: 'none'
-// })
-
-// ScrollTrigger.create({
-//   trigger: '.section__choice-cars',
-//   start: 'top',
-//   end: () => `+=${getScrollAmount() * -1}`,
-//   pin: true,
-//   animation: tween,
-//   scrub: 1,
-//   invalidateOnRefresh: true
-// })

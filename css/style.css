@@ -4,7 +4,12 @@
   padding: 0 10px;
 }
 
-.header__content {
+
+
+
+
+
+.header__inner {
   padding: 40px 0 20px;
   max-width: 1170px;
   width: 100%;
@@ -62,7 +67,23 @@
   align-items: center;
 }
 
-.section__offer {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offer {
   background-color: #000000;
 }
 
@@ -76,10 +97,9 @@
   padding-top: 128px;
   border-radius: 0px 0px 60px 60px;
   overflow: hidden;
-
 }
 
-.offer__content-text {
+.offer__text {
   text-align: center;
   font-style: normal;
   max-width: 750px;
@@ -87,16 +107,12 @@
   position: relative;
 }
 
-
-
 .offer__title-line {
   position: absolute;
   top: 34.4%;
   left: 1.6%;
   rotate: -10deg;
 }
-
-
 
 .offer__title {
   margin-bottom: 22px;
@@ -108,16 +124,6 @@
   color: #D5DFE9;
   position: relative;
 }
-
-/* .offer__title::before {
-  content: url(../images/lineTitleOffer.svg);
-  position: absolute;
-  left: 1.7%;
-  top: 18.3%;
-} */
-
-
-
 
 .offer__span {
   font-weight: 400;
@@ -136,30 +142,13 @@
   position: relative;
 }
 
-.offer__sun {
-
-  position: absolute;
-  bottom: -111%;
-  right: 17.4%;
-  rotate: 60deg;
-}
-
-
-/* .offer__links::before {
-  content: url(../images/sun.svg);
-  position: absolute;
-  right: 17.5%;
-  bottom: -115.7%;
-} */
-
 .offer__link {
   width: 170px;
   cursor: pointer;
 }
 
 
-
-.offer__link-choice {
+.offer__link-choice_car {
   background: #6CDEBB;
   border: 3px solid #3b695f;
   border-radius: 16px;
@@ -177,7 +166,7 @@
   outline: 0;
 }
 
-.offer__link-see {
+.offer__link-see__video {
   width: 170px;
   cursor: pointer;
   gap: 10px;
@@ -194,11 +183,18 @@
   transition: all 0.3s ease 0s;
 }
 
-.offer__link-see::before {
+.offer__link-see__video::before {
   position: relative;
   content: url(../images/playVIdeo.svg);
   display: block;
   right: -4px;
+}
+
+.sun {
+  position: absolute;
+  bottom: -111%;
+  right: 17.4%;
+  rotate: 60deg;
 }
 
 .offer__content-inner {
@@ -209,36 +205,22 @@
   position: relative;
 }
 
-.offer__lightnings {
+.offer__img-car {
+  margin: 0 auto;
+}
+
+.lightnings {
   position: absolute;
   top: -18%;
   left: 28%;
   rotate: 20deg;
 }
 
-/* .offer__images::before {
-  content: url(../images/lightnings.svg);
-  position: absolute;
-  top: -12%;
-  left: 28%;
-} */
-
-/* .offer__images::after {
-  content: url(../images/lines.svg);
-  position: absolute;
-  top: 17%;
-  left: 22.7%;
-} */
-
 .offer__lines {
   position: absolute;
   top: 17%;
   left: 22.8%;
   rotate: -20deg;
-}
-
-.offer__img-car {
-  margin: 0 auto;
 }
 
 .offer__service-items {
@@ -250,7 +232,6 @@
   gap: 30px;
   bottom: 213px;
   opacity: 0;
-
 }
 
 .offer__service-item {
@@ -269,11 +250,6 @@
   padding-top: 28px;
 }
 
-.offer__service-item-notdrive,
-.offer__service-item-discounts {
-  padding: 28px 40px 0;
-}
-
 .offer__service-item-cars::before {
   content: url('../images/service/car.svg');
   margin: 0 auto 7px;
@@ -284,6 +260,11 @@
   content: url('../images/service/unchear.png');
   margin: 0 auto 7px;
   display: block;
+}
+
+.offer__service-item-notdrive,
+.offer__service-item-discounts {
+  padding: 28px 40px 0;
 }
 
 .offer__service-item-notdrive::before {
@@ -304,12 +285,31 @@
   display: block;
 }
 
-.section__about {
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
   background-color: #000000;
 }
 
 .about__content {
   padding: 200px 0 235px;
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 64px;
 }
 
 .about__title {
@@ -329,13 +329,6 @@
   left: -10%;
 }
 
-.about__top {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 64px;
-}
-
 .about__text {
   max-width: 970px;
   margin: 0 auto 84px;
@@ -350,7 +343,6 @@
   font-weight: 400;
   line-height: 111.5%;
   letter-spacing: 1.7px;
-
 }
 
 .about__bottom {
@@ -376,16 +368,18 @@
   position: relative;
 }
 
+.about__possibilities-departure-text,
+.about__possibilities-accessories-text {
+  position: relative;
+  font-weight: 100;
+}
+
 .about__possibilities-departure::before {
   content: url("../images/flagGeorgia.png");
 }
 
 .about__possibilities-accessories::before {
   content: url("../images/tools.png");
-}
-
-.about__possibilities-departure-text {
-  position: relative;
 }
 
 .about__possibilities-departure::after {
@@ -400,11 +394,6 @@
   position: absolute;
   top: -46%;
   right: 33%;
-}
-
-.about__possibilities-accessories-text {
-  position: relative;
-  font-weight: 100;
 }
 
 .about__possibilities-accessories-text::after {
@@ -426,21 +415,35 @@
 
 
 
-.section__choice {
-  padding: 334px 0 348px;
+
+
+
+
+
+
+
+
+
+.choice {
   background-color: #000000;
-  width: 100%;
 }
 
 .choice__content {
-  border-radius: 0 0 60px 60px;
+  display: flex;
 }
 
+.choice__top {
+  height: 100vh;
+  width: 100vw;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .choice__title {
   color: #D5DFE9;
   text-align: center;
-  font-family: Lato;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -449,12 +452,12 @@
   z-index: 100;
 }
 
+
 .choice__title-span {
-  display: block;
   position: relative;
   z-index: 100;
-  font-weight: 100;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .choice__title-span:first-child {
@@ -464,27 +467,59 @@
 .choice__title-span:first-child::before {
   content: url(../images/linesChoice.svg);
   position: absolute;
-  top: -38%;
-  left: 31.6%;
-
+  top: -28px;
+  left: -25px;
 }
 
 .choice__title-span:first-child::after {
   position: absolute;
   content: url(../images/choiceCrown.svg);
-  bottom: 24%;
-  right: 34.6%;
+  bottom: 23px;
+  right: 61px;
 }
-
-
 
 .choice__title-span:last-child::after {
   content: url(../images/lightningsChoice.svg);
   position: absolute;
-  right: 17.5%;
-  bottom: -37%;
 
 }
+
+
+
+
+
+.choice__bottom {
+  background-color: red;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.section__choice-car {
+  background-color: #000000;
+  display: flex;
+}
+
+.choice__content {
+  border-radius: 0 0 60px 60px;
+  padding: 334px 0 348px;
+  min-width: 100%;
+  width: 100vw;
+}
+
+
+
+
 
 .choice__img {
   position: relative;
@@ -495,6 +530,8 @@
 .cars__content {
   padding: 172px 117px 133px 134px;
   background-color: #000000;
+  min-width: 100%;
+  width: 100vw;
 }
 
 .list__cars {
@@ -533,9 +570,6 @@
   margin-bottom: 31px;
 }
 
-
-
-
 .car__info {
   display: flex;
   width: 313px;
@@ -569,10 +603,6 @@
   font-weight: 700;
   line-height: 111.5%;
 }
-
-
-
-
 
 .car__list-details {
   display: grid;
@@ -621,9 +651,6 @@
   line-height: 111.5%;
   text-transform: uppercase;
 }
-
-
-
 
 .car__item-link {
   display: flex;
@@ -680,8 +707,25 @@
 
 
 
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
 .conditions__content {
-  padding: 409px 410px 420px;
+  padding: 409px 410px 400px;
   background-color: #D5DFE9;
   min-height: 110vh;
 }
@@ -735,40 +779,31 @@
   display: block;
 }
 
-main {
-  overflow-x: hidden;
-}
-
-.choice__cars-content {
-  display: flex;
-  flex-wrap: nowrap;
-  width: fit-content;
-}
-
-.section__choice-cars {
-  background-color: #000000;
-}
-
-
-
-.requirements__content {
-  padding: 203px 225px 370px;
+.section__requirements,
+.section__documents {
+  padding: 203px 225px 350px;
   background-color: #D5DFE9;
 }
 
-.requirements__content-inner {
+.requirements__content-inner,
+.documents__content-inner {
+  max-width: 970px;
   display: flex;
   justify-content: space-between;
-  max-width: 970px;
   margin: 0 auto;
 }
 
-.requirements__title-number,
-.requirements__title-text {
-  display: block;
+
+.requirements__title,
+.documents__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
 }
 
-.requirements__title-number {
+.requirements__title-number,
+.documents__title-number {
   display: flex;
   width: 100px;
   height: 100px;
@@ -783,12 +818,12 @@ main {
   font-weight: 700;
   line-height: 111.5%;
   letter-spacing: 1.28px;
-  margin-bottom: 23px;
   background-color: #BCCAD9;
-  border-radius: 25px;
+  border-radius: 24px;
 }
 
-.requirements__title-text {
+.requirements__title-text,
+.documents__title-text {
   color: #0B0D0F;
   font-family: Lato;
   font-size: 48px;
@@ -798,9 +833,10 @@ main {
   letter-spacing: 0.96px;
 }
 
-.requirements__items {
+.requirements__items,
+.documents__items {
   display: flex;
-  width: 470px;
+  width: 100%;
   padding: 30px 22px 30px 30px;
   flex-direction: column;
   justify-content: center;
@@ -808,20 +844,51 @@ main {
   gap: 20px;
   border-radius: 30px;
   background: #BCCAD9;
+  max-width: 470px;
 }
 
-.requirements__item {
+.requirements__item,
+.documents__item {
   display: flex;
   padding: 30px;
   align-items: center;
   gap: 24px;
   align-self: stretch;
+  display: flex;
+  padding: 30px;
+  align-items: center;
   border-radius: 30px;
   background: #CAD8E6;
+}
+
+.documents__content-inner-list {
+  width: 100%;
+  max-width: 470px;
+}
+
+.documents__content-foreigners {
+  display: flex;
+  width: 478px;
+  padding: 30px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 30px;
+  border: 3px dashed #BCCAD9;
   color: #0B0D0F;
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  width: 100%;
+  max-width: 470px;
+  padding: 30px;
+}
+
+.documents__items {
+  margin-bottom: 30px;
+}
+
+.sections {
+  display: flex;
 }
