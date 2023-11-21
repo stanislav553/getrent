@@ -4,6 +4,9 @@
   padding: 0 10px;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 
 
@@ -434,11 +437,11 @@
 
 .choice__top {
   height: 100vh;
-  width: 100vw;
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .choice__title {
@@ -451,7 +454,6 @@
   letter-spacing: 1.28px;
   z-index: 100;
 }
-
 
 .choice__title-span {
   position: relative;
@@ -484,54 +486,21 @@
 
 }
 
-
-
-
-
 .choice__bottom {
-  background-color: red;
-  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  min-width: 100%;
+  /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.section__choice-car {
-  background-color: #000000;
+.choice__car {
+  height: 100vh;
+  justify-content: center;
   display: flex;
-}
-
-.choice__content {
-  border-radius: 0 0 60px 60px;
-  padding: 334px 0 348px;
-  min-width: 100%;
-  width: 100vw;
-}
-
-
-
-
-
-.choice__img {
-  position: relative;
-  top: -64px;
-  right: -47.2%;
-}
-
-.cars__content {
-  padding: 172px 117px 133px 134px;
-  background-color: #000000;
-  min-width: 100%;
-  width: 100vw;
+  flex-direction: column;
 }
 
 .list__cars {
@@ -541,6 +510,7 @@
   color: #D5DFE9;
   margin-bottom: 64px;
   justify-content: center;
+  align-items: center;
 }
 
 .item__car {
@@ -548,14 +518,6 @@
   border-radius: 30px;
   background: #16191D;
   width: 370px;
-}
-
-.item__car:first-child {
-  padding: 32px 23px 26px 29px;
-}
-
-.item__car:last-child {
-  padding: 36px 25px 26px 30px;
 }
 
 .car__reservation-reno {
@@ -587,11 +549,7 @@
   line-height: 111.5%;
 }
 
-.car__name {
-  max-width: 180px;
-}
-
-.ccar__span {
+.car__span {
   display: flex;
   padding: 8px 14px;
   align-items: flex-start;
@@ -620,6 +578,19 @@
   border-radius: 14px;
 }
 
+.item__car-power-title,
+.item__car-engine-title,
+.item__car-capacity-title {
+  align-self: stretch;
+  color: #66727E;
+  font-family: Lato;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.5%;
+  text-transform: uppercase;
+}
+
 .item__car-power::before {
   content: url(../images/iconPower.svg);
   margin-bottom: 20px;
@@ -636,20 +607,6 @@
   content: url(../images/iconCapacity.svg);
   margin-bottom: 20px;
   display: block;
-}
-
-
-.item__car-power-title,
-.item__car-engine-title,
-.item__car-capacity-title {
-  align-self: stretch;
-  color: #66727E;
-  font-family: Lato;
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 111.5%;
-  text-transform: uppercase;
 }
 
 .car__item-link {
@@ -710,12 +667,47 @@
 
 
 
+/* 
+.section__choice-car {
+  background-color: #000000;
+  display: flex;
+}
+.choice__content {
+  border-radius: 0 0 60px 60px;
+  padding: 334px 0 348px;
+  min-width: 100%;
+  width: 100vw;
+}
+.choice__img {
+  position: relative;
+  top: -64px;
+  right: -47.2%;
+}
+.cars__content {
+  padding: 172px 117px 133px 134px;
+  background-color: #000000;
+  min-width: 100%;
+  width: 100vw;
+}
+.list__cars {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: #D5DFE9;
+  margin-bottom: 64px;
+  justify-content: center;
+}
+.item__car:first-child {
+  padding: 32px 23px 26px 29px;
+}
+.item__car:last-child {
+  padding: 36px 25px 26px 30px;
+}
+.car__name {
+  max-width: 180px;
+}
+*/
 
-
-
-
-
- */
 
 
 

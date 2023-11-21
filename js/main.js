@@ -26,3 +26,16 @@ window.onscroll = function () {
     })
   }
 }
+
+const tl = gsap.timeline()
+tl.to('.choice__bottom', {x: '-100%'}, {x: 0})
+tl.to('.choice__top', {x: '-100%'}, {x: 0})
+
+ScrollTrigger.create({
+  animation: tl,
+  trigger: '.choice__content',
+  start: 'top top',
+  end: 'bottom',
+  scrub: true,
+  pin: true
+})
