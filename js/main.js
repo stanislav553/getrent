@@ -36,6 +36,20 @@ ScrollTrigger.create({
   trigger: '.choice__content',
   start: 'top top',
   end: 'bottom',
-  scrub: true,
+  scrub: 1,
+  pin: true
+})
+
+const ts = gsap.timeline()
+ts.to('.condition__bottom', {x: '-200%'}, {x: 0})
+ts.to('.condition__center', {x: '-200%'}, {x: 0})
+ts.to('.condition__top', {x: '-300%'}, {x: 0})
+
+ScrollTrigger.create({
+  animation: ts,
+  trigger: '.condition__content',
+  start: 'top top',
+  end: 'bottom',
+  scrub: 1,
   pin: true
 })
