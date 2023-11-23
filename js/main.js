@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
 gsap.to('.offer__title-line, .sun, .lightnings', {
   rotate: 0,
   duration: 2
@@ -53,3 +55,10 @@ ScrollTrigger.create({
   scrub: 1,
   pin: true
 })
+
+ScrollSmoother.create({
+  smooth: 1,
+  effects: true,
+  smoothTouch: 0.1
+})
+ScrollTrigger.normalizeScroll(true)
