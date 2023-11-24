@@ -56,6 +56,22 @@ ScrollTrigger.create({
   pin: true
 })
 
+const tr = gsap.timeline()
+tr.to('.location__section-four', {x: '-400%'}, {x: 0})
+tr.to('.location__section-three', {x: '-400%'}, {x: 0})
+tr.to('.location__section-two', {x: '-400%'}, {x: 0})
+tr.to('.location__section-one', {x: '-400%'}, {x: 0})
+tr.to('.location__main', {x: '-400%'}, {x: 0})
+
+ScrollTrigger.create({
+  animation: tr,
+  trigger: '.locations__content',
+  start: 'top top',
+  end: 'bottom',
+  scrub: 1,
+  pin: true
+})
+
 ScrollSmoother.create({
   smooth: 1,
   effects: true,
