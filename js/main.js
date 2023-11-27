@@ -78,3 +78,13 @@ ScrollSmoother.create({
   smoothTouch: 0.1
 })
 ScrollTrigger.normalizeScroll(true)
+
+const btmMenu = document.querySelector('.header__burger-btn')
+const menuActive = document.querySelector('.menu')
+
+const activeMenu = () => {
+  menuActive.classList.toggle('menu__active')
+  btmMenu.classList.toggle('header__burger-btn__active')
+}
+
+btmMenu.addEventListener('click', activeMenu)
