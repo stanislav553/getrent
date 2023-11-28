@@ -27,6 +27,9 @@ body {
   transform: translateX(-50%);
 }
 
+
+
+
 .header__burger-btn {
   display: none;
   width: 40px;
@@ -39,9 +42,6 @@ body {
 .header__burger-btn span {
   transition: opacity 0.1s, transform 0.5s;
 }
-
-
-
 
 .header__burger-btn span {
   position: absolute;
@@ -71,9 +71,10 @@ body {
   transform: translateY(0) rotate(-45deg);
 }
 
+
+
+
 .menu {
-  display: flex;
-  gap: 4px;
   background: #0B0D0F;
   border-radius: 1000px;
 }
@@ -103,6 +104,46 @@ body {
   line-height: normal;
 }
 
+.menu__buttons {
+  display: none;
+}
+
+.menu__button {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  height: 49px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu__button-choice {
+  color: #1D1F23;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  border-radius: 16px;
+  border: 3px solid #285245;
+  background: #6CDEBB;
+}
+
+.menu__button-phone {
+  color: #D5DFE9;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  border-radius: 16px;
+  background: #3E424B;
+}
+
 .phone {
   color: #1D1F23;
   font-size: 14px;
@@ -114,6 +155,117 @@ body {
   padding: 14px 18px 14px 15px;
   align-items: center;
 }
+
+@media (max-width: 1180px) {
+  .logo {
+    width: 140px;
+    z-index: 3;
+  }
+
+  .phone {
+    padding: 10px 18px 10px 15px;
+  }
+
+  .menu__list-item {
+    padding: 12px 20px 12px 20px;
+  }
+}
+
+
+@media (max-width: 1028px) {
+  .phone {
+    display: none;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 2;
+  }
+
+  .header__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__menu-content {}
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 30px;
+    padding: 100px 20px 20px;
+    transition: transform 0.5s ease 0s;
+  }
+
+  .menu-list {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .menu__list-link {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .header__inner {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .menu__buttons {
+    z-index: 2;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 120px;
+  }
+
+  .header__inner {
+    padding: 38px 20px 20px
+  }
+
+  .header__burger-btn {
+    width: 32px;
+    height: 35px;
+  }
+
+  .header__burger-btn span {
+    width: 20px;
+  }
+
+  .menu {
+    padding: 188px 19.9px 20px;
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .menu__list-item {
+    padding: 8px 20px 18px 0px
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1345,103 +1497,4 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 111.5%;
-}
-
-
-
-
-@media (max-width: 1180px) {
-  .logo {
-    width: 140px;
-    z-index: 3;
-  }
-
-  .phone {
-    padding: 10px 18px 10px 15px;
-  }
-
-  .menu__list-item {
-    padding: 12px 21px 12px 20px;
-  }
-}
-
-
-
-
-
-
-@media (max-width: 1028px) {
-  .phone {
-    display: none;
-  }
-
-  .header__burger-btn {
-    display: block;
-    z-index: 2;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 0 0 0 30px;
-    padding: 100px 20px 20px;
-    background: #0B0D0F;
-    transition: transform 0.5s ease 0s;
-  }
-
-  .menu__active {
-    transform: translateX(100%);
-  }
-
-
-  .menu-list {
-    display: block;
-    max-width: 500px;
-    width: 100%;
-  }
-
-  .menu__list-link {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .header__inner {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-
-}
-
-
-@media (max-width: 320px) {
-  .logo {
-    width: 120px;
-  }
-
-  .header__inner {
-    padding: 38px 20px 20px
-  }
-
-  .header__burger-btn {
-    width: 32px;
-    height: 35px;
-  }
-
-  .header__burger-btn span {
-    width: 20px;
-  }
-
-  .menu {
-    padding: 188px 19.9px 20px;
-    width: 100%;
-    border-radius: 0;
-    height: 100vh;
-  }
-
-  .menu__list-item {
-    padding: 8px 20px 18px 0px
-  }
-
-
 }
