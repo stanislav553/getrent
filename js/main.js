@@ -80,7 +80,7 @@ ScrollSmoother.create({
 ScrollTrigger.normalizeScroll(true)
 
 const btmMenu = document.querySelector('.header__burger-btn')
-const menuActive = document.querySelector('.header__menu-content')
+const menuActive = document.querySelector('.menu')
 
 const activeMenu = () => {
   menuActive.classList.toggle('menu__active')
