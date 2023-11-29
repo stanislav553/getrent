@@ -1,18 +1,39 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
-gsap.to('.offer__title-line, .sun, .lightnings', {
-  rotate: 0,
-  duration: 2
+gsap.from('.offer__text, .offer__links', {
+  duration: 1,
+  delay: 1,
+  opacity: 0,
+  delay: 1
 })
 
-gsap.to('.lightnings', {
-  top: '-12%',
-  duration: 2
+gsap.from('.offer__title-line', {
+  rotate: '-10deg',
+  duration: 1,
+  opacity: 0,
+  delay: 1
 })
 
-gsap.to('.offer__lines', {
-  rotate: 0,
-  duration: 2
+gsap.from('.sun', {
+  rotate: '60deg',
+  duration: 1,
+  opacity: 0,
+  delay: 1
+})
+
+gsap.from('.lightnings', {
+  rotate: '20deg',
+  top: '-18%',
+  duration: 1,
+  opacity: 0,
+  delay: 1
+})
+
+gsap.from('.offer__lines', {
+  rotate: '-20deg',
+  duration: 1,
+  opacity: 0,
+  delay: 1
 })
 
 window.onscroll = function () {
