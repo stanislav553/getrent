@@ -109,3 +109,42 @@ const activeMenu = () => {
 }
 
 btmMenu.addEventListener('click', activeMenu)
+
+//////////////////////////////////////////////////////////////////////////////////
+
+gsap.to('.anim', {
+  scrollTrigger: {
+    trigger: '.about__content',
+    start: 'top 90%',
+    end: 'bottom 20%',
+    scrub: true,
+    markers: true
+  },
+  opacity: 1,
+  top: 0,
+  duration: 2
+})
+
+gsap.to('.about__text', {
+  scrollTrigger: {
+    trigger: '.about__content',
+    start: 'top 90%',
+    end: 'bottom 20%',
+    scrub: true,
+  },
+  opacity: 1,
+  top: 0,
+  duration: 2
+})
+
+gsap.to('.about__bottom', {
+  scrollTrigger: {
+    trigger: '.about__content',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    scrub: true
+  },
+  opacity: 1,
+  top: 0,
+  duration: 2
+})

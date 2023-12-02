@@ -395,17 +395,23 @@ body {
 }
 
 .about__content {
-  padding: 200px 0 235px;
+  padding: 176px 0 235px;
+  margin-top: -1px;
 }
 
 .about__top {
+  padding: 0 20px;
+  max-width: 1012px;
+  margin: 0 auto 64px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 64px;
+  position: relative;
+  top: 70vh;
+  opacity: 0;
 }
 
-.about__title {
+.about__title-content {
   font-weight: 700;
   font-size: 48px;
   line-height: 111.5%;
@@ -415,27 +421,45 @@ body {
   bottom: 6px;
 }
 
-.about__title::before {
-  content: url('../images/aboutStroke.svg');
-  position: absolute;
-  top: -35%;
-  left: -10%;
+.about__title {
+  position: relative;
+  z-index: 100;
 }
+
+.about__title-img {
+  position: absolute;
+  top: -24px;
+  left: -18px;
+  z-index: 1;
+}
+
 
 .about__text {
   max-width: 970px;
   margin: 0 auto 84px;
   padding: 0 100px 0 0;
+  position: relative;
+  top: 50vh;
+  opacity: 0;
 }
 
+
+
+
+
+
+
+
 .about__text-inner {
+  line-height: 112.5%;
+  letter-spacing: 0.03em;
+  font-family: Lato, system-ui;
+  box-sizing: border-box;
+  word-spacing: 0.01px;
   color: #D5DFE9;
-  font-family: Lato;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 111.5%;
-  letter-spacing: 1.7px;
 }
 
 .about__bottom {
@@ -446,6 +470,9 @@ body {
   font-size: 18px;
   line-height: 140%;
   color: #FFFFFF;
+  position: relative;
+  top: 50vh;
+  opacity: 0;
 }
 
 .about__possibilities-departure,
@@ -482,11 +509,15 @@ body {
   left: -1.2%;
 }
 
-.about__possibilities-departure-text::before {
+.about__possibilities-departure-text span {
+  position: relative;
+}
+
+.about__possibilities-departure-text span::before {
   content: url('../images/arrrowAbout.svg');
   position: absolute;
-  top: -46%;
-  right: 33%;
+  left: -39%;
+  bottom: 73%;
 }
 
 .about__possibilities-accessories-text::after {
@@ -496,21 +527,16 @@ body {
   top: -16%;
 }
 
-.about__possibilities-accessories-text::before {
-  content: url(../images/lineAbout.svg);
-  position: absolute;
-  right: 55%;
-  top: 85%;
+.about__possibilities-accessories-text span {
+  position: relative;
 }
 
-
-
-
-
-
-
-
-
+.about__possibilities-accessories-text span::before {
+  content: url(../images/lineAbout.svg);
+  position: absolute;
+  right: 4%;
+  top: 85%;
+}
 
 
 
@@ -1584,12 +1610,47 @@ body {
 
 
 
+  .offer__service-item:last-child {
+    width: 100%;
+  }
 
 
+
+
+
+  .about__text-inner {
+    font-size: 18px;
+  }
+
+
+
+  .about__possibilities-departure,
+  .about__possibilities-accessories {
+    width: 430px;
+  }
 }
 
 
 
+@media (max-width: 900px) {
+  .about__bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about__possibilities-departure,
+  .about__possibilities-accessories {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .about__top {
+    margin-bottom: 48px;
+    flex-direction: column;
+    gap: 65px;
+  }
+}
 
 @media (max-width: 576px) {
   .logo {
@@ -1660,6 +1721,44 @@ body {
   .offer__img-car {
     width: 484px;
     height: 417px;
+  }
+
+  .lightnings {
+    top: -18.9%;
+    left: 3%;
+  }
+
+
+  .offer__lines,
+  .vector__right,
+  .vector__left,
+  .rays {
+    display: none;
+  }
+
+  .offer__service-item {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about__text-inner {
+    font-size: 16px;
+  }
+
+
+  .about__bottom {
+    font-size: 16px;
   }
 
 
