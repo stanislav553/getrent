@@ -49,49 +49,55 @@ window.onscroll = function () {
     })
   }
 }
+//////////////////////////////////////////////////////////////////////////////////
 
-const tl = gsap.timeline()
-tl.to('.choice__bottom', {x: '-100%'}, {x: 0})
-tl.to('.choice__top', {x: '-100%'}, {x: 0})
+if (window.screen.width > 1180) {
+  const tl = gsap.timeline()
+  tl.to('.choice__bottom', {x: '-100%'}, {x: 0})
+  tl.to('.choice__top', {x: '-100%'}, {x: 0})
 
-ScrollTrigger.create({
-  animation: tl,
-  trigger: '.choice__content',
-  start: 'top top',
-  end: 'bottom',
-  scrub: 1,
-  pin: true
-})
+  ScrollTrigger.create({
+    animation: tl,
+    trigger: '.choice__content',
+    start: 'top top',
+    end: 'bottom',
+    scrub: 1,
+    pin: true
+  })
 
-const ts = gsap.timeline()
-ts.to('.condition__bottom', {x: '-200%'}, {x: 0})
-ts.to('.condition__center', {x: '-200%'}, {x: 0})
-ts.to('.condition__top', {x: '-300%'}, {x: 0})
+  const ts = gsap.timeline()
+  ts.to('.condition__bottom', {x: '-200%'}, {x: 0})
+  ts.to('.condition__center', {x: '-200%'}, {x: 0})
+  ts.to('.condition__top', {x: '-300%'}, {x: 0})
 
-ScrollTrigger.create({
-  animation: ts,
-  trigger: '.condition__content',
-  start: 'top top',
-  end: 'bottom',
-  scrub: 1,
-  pin: true
-})
+  ScrollTrigger.create({
+    animation: ts,
+    trigger: '.condition__content',
+    start: 'top top',
+    end: 'bottom',
+    scrub: 1,
+    pin: true
+  })
+}
 
-const tr = gsap.timeline()
-tr.to('.location__section-four', {x: '-400%'}, {x: 0})
-tr.to('.location__section-three', {x: '-400%'}, {x: 0})
-tr.to('.location__section-two', {x: '-400%'}, {x: 0})
-tr.to('.location__section-one', {x: '-400%'}, {x: 0})
-tr.to('.location__main', {x: '-400%'}, {x: 0})
+//////////////////////////////////////////////////////////////////////////////////
 
-ScrollTrigger.create({
-  animation: tr,
-  trigger: '.locations__content',
-  start: 'top top',
-  end: 'bottom',
-  scrub: 1,
-  pin: true
-})
+// const tr = gsap.timeline()
+// tr.to('.location__section-four', {x: '-400%'}, {x: 0})
+// tr.to('.location__section-three', {x: '-400%'}, {x: 0})
+// tr.to('.location__section-two', {x: '-400%'}, {x: 0})
+// tr.to('.location__section-one', {x: '-400%'}, {x: 0})
+// tr.to('.location__main', {x: '-400%'}, {x: 0})
+
+// ScrollTrigger.create({
+//   animation: tr,
+//   trigger: '.locations__content',
+//   start: 'top top',
+//   end: 'bottom',
+//   scrub: 1,
+//   pin: true
+// })
+//////////////////////////////////////////////////////////////////////////////////
 
 ScrollSmoother.create({
   smooth: 1,
@@ -117,8 +123,7 @@ gsap.to('.anim', {
     trigger: '.about__content',
     start: 'top 90%',
     end: 'bottom 20%',
-    scrub: true,
-    markers: true
+    scrub: true
   },
   opacity: 1,
   top: 0,
@@ -130,7 +135,7 @@ gsap.to('.about__text', {
     trigger: '.about__content',
     start: 'top 90%',
     end: 'bottom 20%',
-    scrub: true,
+    scrub: true
   },
   opacity: 1,
   top: 0,
@@ -148,3 +153,5 @@ gsap.to('.about__bottom', {
   top: 0,
   duration: 2
 })
+
+//////////////////////////////////////////////////////////////////////////////////
