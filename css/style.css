@@ -1176,7 +1176,9 @@ body {
 }
 
 .mountains,
-.photocard {
+.photocard,
+.line__places,
+.oval__places {
   position: absolute;
 }
 
@@ -1189,6 +1191,19 @@ body {
   left: 41px;
   bottom: -145px;
 }
+
+.oval__places {
+  right: 42px;
+  bottom: -17px;
+  z-index: -1;
+}
+
+.line__places {
+  top: -52px;
+  right: -57px;
+}
+
+
 
 .location__section {
   min-width: 100%;
@@ -1339,7 +1354,7 @@ body {
   top: -180px;
 }
 
-.places__img-protocard {
+.places__img-photocard {
   position: absolute;
   bottom: -215px;
   left: 50px;
@@ -1492,17 +1507,11 @@ body {
     font-size: 46px;
   }
 
-
   .condition__bottom-items,
   .condition__bottom-items,
   .condition__items {
     padding: 30px 22px;
   }
-
-
-
-
-
 
   .reviews__title {
     font-size: 62px;
@@ -1519,6 +1528,47 @@ body {
     width: 100px;
     top: 30px;
   }
+
+  .locations__content {
+    flex-direction: column;
+  }
+
+  .location__main {
+    padding: 0 25px;
+    height: 101vh;
+  }
+
+  .location__title {
+    font-size: 46px;
+  }
+
+  .mountains {
+    width: 237px;
+    top: -138px;
+  }
+
+  .photocard {
+    width: 144px;
+    bottom: -143px;
+  }
+
+
+
+  .location__section-three,
+  .location__section-four {
+    display: none;
+  }
+
+
+
+  .location__section-inner {
+    padding: 0 100px 150px;
+  }
+
+
+
+
+
 
 
 }
@@ -1727,6 +1777,58 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+  .location__title {
+    font-size: 40px;
+  }
+
+  .mountains {
+    width: 237px;
+    top: -138px;
+  }
+
+  .photocard {
+    width: 144px;
+    bottom: -143px;
+  }
+
+
+
+
+
+  .location__section-inner {
+    padding: 0 100px 150px;
+  }
+
+  .location__section-title__link {
+    font-size: 46px;
+  }
+
+  .location__section-title__subst {
+    font-size: 22px;
+  }
+
+
+
+
+
+  .places__title {
+    font-size: 46px;
+  }
+
+
+
+
+
+
+
 }
 
 @media (max-width: 900px) {
@@ -1795,13 +1897,9 @@ body {
     max-width: 467px;
   }
 
-
-
-
   .reviews__title {
     font-size: 56px;
   }
-
 
   .reviews__title-span:first-child img {
     left: 413px;
@@ -1813,6 +1911,49 @@ body {
     left: -95px;
     width: 94px;
     top: 24px;
+  }
+
+  .location__section-inner {
+    padding: 0 70px 120px;
+  }
+
+  .location__section-title__link {
+    font-size: 42px;
+  }
+
+  .location__section-title__subst {
+    font-size: 20px;
+  }
+
+
+
+
+
+  .places__content {
+    padding: 40px 60px;
+  }
+
+  .places__title {
+    font-size: 44px;
+    margin-bottom: 22px;
+  }
+
+  .places__img-mountains {
+    width: 230px;
+    left: -88px;
+  }
+
+  .places__span-img {
+    width: 98px;
+  }
+
+  .places__img-photocard {
+    width: 136px;
+    bottom: -200px;
+  }
+
+  .places__img-heart {
+    width: 84px;
   }
 
 }
@@ -1838,8 +1979,6 @@ body {
     bottom: -22px;
   }
 
-
-
   .reviews__title {
     font-size: 54px;
   }
@@ -1855,6 +1994,65 @@ body {
     width: 92px;
     top: 20px;
   }
+
+  .location__title {
+    font-size: 36px;
+  }
+
+  .mountains {
+    width: 226px;
+    top: -132px;
+    left: 251px;
+  }
+
+  .photocard {
+    width: 138px;
+    bottom: -142px;
+    left: 56px;
+  }
+
+  .location__section-inner {
+    padding: 0 60px 100px;
+  }
+
+  .location__section-title__link {
+    font-size: 38px;
+  }
+
+  .location__section-title__subst {
+    font-size: 18px;
+  }
+
+
+  .places__content {
+    padding: 40px;
+  }
+
+  .places__title {
+    font-size: 40px;
+  }
+
+  .places__img-mountains {
+    width: 220px;
+    left: -80px;
+  }
+
+  .places__span-img {
+    width: 90px;
+    right: -94px;
+    top: 30%;
+  }
+
+  .places__img-photocard {
+    width: 124px;
+    bottom: -170px;
+  }
+
+  .places__img-heart {
+    width: 82px;
+    top: -162px;
+  }
+
 
 
 
@@ -1929,7 +2127,101 @@ body {
     margin-bottom: 0;
   }
 
+  .location__title {
+    font-size: 34px;
+  }
+
+  .mountains {
+    width: 215px;
+    top: -129px;
+    left: 170px;
+  }
+
+  .photocard {
+    width: 126px;
+    bottom: -135px;
+    left: 66px;
+  }
+
+  .location__section-inner {
+    padding: 0 30px 90px;
+  }
+
+  .location__section-title__link {
+    font-size: 34px;
+  }
+
+  .location__section-title__subst {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .places__content {
+    padding: 40px;
+  }
+
+  .places__title {
+    font-size: 36px;
+  }
+
+  .places__img-mountains {
+    width: 200px;
+    left: -50px;
+    top: -130px;
+  }
+
+  .places__span-img {
+    width: 85px;
+    right: -79px;
+    top: -30%;
+  }
+
+  .places__img-photocard {
+    width: 100px;
+    bottom: -146px;
+  }
+
+  .places__img-heart {
+    width: 79px;
+    top: -127px;
+  }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 576px) {
   .logo {
@@ -2053,17 +2345,10 @@ body {
     right: 50px;
   }
 
-
-
-
-
   .condition__bottom-content,
   .condition__center-content {
     padding: 36px;
   }
-
-
-
 
   .reviews__title {
     font-size: 40px;
@@ -2081,13 +2366,9 @@ body {
     top: 32px;
   }
 
-
-
-
   .reviews__content-item {
     padding: 20px 16px 20px;
     height: 100%;
-
   }
 
   .reviews__item-text--content {
@@ -2097,6 +2378,63 @@ body {
   .reviews__link {
     font-size: 20px;
   }
+
+  .location__title {
+    font-size: 30px;
+  }
+
+  .mountains {
+    width: 164px;
+    top: -100px;
+    left: 16px;
+  }
+
+  .photocard {
+    width: 96px;
+    bottom: -99px;
+    left: 160px;
+  }
+
+  .location__section-inner {
+    padding: 0 20px 90px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .location__section-title__link {
+    font-size: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .places__content {
+    padding: 40px;
+  }
+
+  .places__title {
+    font-size: 36px;
+  }
+
+  .places__img-mountains {
+    width: 160px;
+    left: 0px;
+    top: -105px;
+  }
+
+  .places__img-photocard {
+    width: 100px;
+    bottom: -146px;
+  }
+
+
+
 
 
 
@@ -2205,6 +2543,78 @@ body {
   .reviews__link {
     font-size: 18px;
   }
+
+
+
+
+
+
+
+  .location__title {
+    font-size: 28px;
+  }
+
+  .mountains {
+    width: 150px;
+    top: -86px;
+    left: 67px;
+  }
+
+  .photocard {
+    width: 79px;
+    bottom: -81px;
+    left: 93px;
+  }
+
+
+
+  .location__section-inner {
+    padding: 0 10px 90px;
+  }
+
+  .location__section-road {
+    max-width: 100%;
+  }
+
+
+
+  .places__content {
+    padding: 40px;
+  }
+
+  .places__title {
+    font-size: 36px;
+  }
+
+  .places__img-mountains {
+    width: 160px;
+    left: 0px;
+    top: -105px;
+  }
+
+  .places__span-img {
+    width: 78px;
+    right: -85px;
+    top: -160%;
+  }
+
+  .places__img-photocard {
+    width: 100px;
+    bottom: -146px;
+  }
+
+  .places__img-heart {
+    right: 0px;
+  }
+
+
+
+
+
+
+
+
+
 
 
 }
