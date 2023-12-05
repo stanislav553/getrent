@@ -61,7 +61,31 @@ gsap.from('.vector__left, .vector__right, .rays', {
 //   }
 // )
 
-/////////////////////////
+///////////////////////////////////
+
+// gsap.to('.about__text', {
+//   scrollTrigger: {
+//     trigger: '.about__content',
+//     start: 'top 90%',
+//     end: 'bottom 20%',
+//     scrub: true
+//   },
+//   opacity: 1,
+//   top: 0,
+//   duration: 2
+// })
+
+// gsap.to('.about__bottom', {
+//   scrollTrigger: {
+//     trigger: '.about__content',
+//     start: 'top 80%',
+//     end: 'bottom 20%',
+//     scrub: true
+//   },
+//   opacity: 1,
+//   top: 0,
+//   duration: 2
+// })
 
 ///////////////////////////////////
 
@@ -138,40 +162,14 @@ const activeMenu = () => {
 }
 
 btmMenu.addEventListener('click', activeMenu)
-
-//всплытие и прозрачность
-// gsap.to('.anim', {
-//   scrollTrigger: {
+// gsap.to('.about__top', {
+//   ScrollTrigger: {
 //     trigger: '.about__content',
-//     start: 'top 90%',
-//     end: 'bottom 20%',
+//     start: 'center',
+//     markers: true,
 //     scrub: true
 //   },
-//   opacity: 1,
-//   top: 0,
-//   duration: 2
-// })
+//   y: 400,
 
-// gsap.to('.about__text', {
-//   scrollTrigger: {
-//     trigger: '.about__content',
-//     start: 'top 90%',
-//     end: 'bottom 20%',
-//     scrub: true
-//   },
-//   opacity: 1,
-//   top: 0,
-//   duration: 2
-// })
-
-// gsap.to('.about__bottom', {
-//   scrollTrigger: {
-//     trigger: '.about__content',
-//     start: 'top 80%',
-//     end: 'bottom 20%',
-//     scrub: true
-//   },
-//   opacity: 1,
-//   top: 0,
 //   duration: 2
 // })

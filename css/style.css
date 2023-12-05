@@ -610,7 +610,7 @@ body::-webkit-scrollbar {
 .choice__title-span__crown {
   position: absolute;
   bottom: 33px;
-  right: 17px;
+  right: 18px;
 }
 
 
@@ -624,7 +624,7 @@ body::-webkit-scrollbar {
 .choice__title-span__oval-top,
 .choice__title-span__oval-bottom {
   position: absolute;
-  right: 12px;
+  right: 20px;
   bottom: -24px;
   z-index: -1;
 }
@@ -855,6 +855,7 @@ body::-webkit-scrollbar {
 
 .condition__title-stripe {
   bottom: -25px;
+  z-index: -1;
 }
 
 .condition__title-marks {
