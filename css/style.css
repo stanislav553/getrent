@@ -587,12 +587,12 @@ body::-webkit-scrollbar {
 .choice__title-span {
   position: relative;
   z-index: 100;
-  letter-spacing: 2px;
+  letter-spacing: -2px;
   font-weight: 700;
 }
 
 .choice__title-span:first-child {
-  letter-spacing: 3px;
+  letter-spacing: -1px;
 }
 
 
@@ -603,25 +603,30 @@ body::-webkit-scrollbar {
 
 .choice__title-span__lines {
   position: absolute;
-  top: -28px;
+  top: -14px;
   left: -25px;
 }
 
 .choice__title-span__crown {
   position: absolute;
-  bottom: 23px;
-  right: 61px;
+  bottom: 33px;
+  right: 17px;
 }
 
 
 .choice__title-span__lightnings {
   position: absolute;
+  bottom: -11px;
+  right: -88px;
 }
 
 
 .choice__title-span__oval-top,
 .choice__title-span__oval-bottom {
   position: absolute;
+  right: 12px;
+  bottom: -24px;
+  z-index: -1;
 }
 
 
