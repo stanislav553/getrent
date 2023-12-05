@@ -3,8 +3,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 gsap.from('.offer__text, .offer__links', {
   duration: 1,
   delay: 1,
-  opacity: 0,
-  delay: 1
+  opacity: 0
 })
 
 gsap.from('.offer__title-line', {
@@ -36,6 +35,36 @@ gsap.from('.offer__lines', {
   delay: 1
 })
 
+gsap.from('.vector__left, .vector__right, .rays', {
+  rotate: '-20deg',
+  duration: 1,
+  opacity: 0,
+  delay: 1
+})
+
+// gsap.from(
+//   [
+//     '.offer__text',
+//     '.offer__links',
+//     '.offer__title-line',
+//     '.sun',
+//     '.lightnings',
+//     '.offer__lines',
+//     '.vector__left',
+//     '.vector__right',
+//     '.rays'
+//   ],
+//   {
+//     duration: 1,
+//     opacity: 0,
+//     delay: 1
+//   }
+// )
+
+/////////////////////////
+
+///////////////////////////////////
+
 window.onscroll = function () {
   if (window.scrollY >= 200) {
     gsap.to('.offer__service-items', {
@@ -49,7 +78,6 @@ window.onscroll = function () {
     })
   }
 }
-//////////////////////////////////////////////////////////////////////////////////
 
 if (window.screen.width > 1180) {
   const tl = gsap.timeline()
@@ -79,8 +107,6 @@ if (window.screen.width > 1180) {
     pin: true
   })
 
-  //////////////////////////////////////////////////////////////////////////////////
-
   const tr = gsap.timeline()
   tr.to('.location__section-four', {x: '-400%'}, {x: 0})
   tr.to('.location__section-three', {x: '-400%'}, {x: 0})
@@ -96,14 +122,12 @@ if (window.screen.width > 1180) {
     scrub: 1,
     pin: true
   })
-  //////////////////////////////////////////////////////////////////////////////////
 }
 ScrollSmoother.create({
   smooth: 1,
   effects: true,
   smoothTouch: 0.1
 })
-// ScrollTrigger.normalizeScroll(true)
 
 const btmMenu = document.querySelector('.header__burger-btn')
 const menuActive = document.querySelector('.header__menu-content')
@@ -115,42 +139,39 @@ const activeMenu = () => {
 
 btmMenu.addEventListener('click', activeMenu)
 
-//////////////////////////////////////////////////////////////////////////////////
+//всплытие и прозрачность
+// gsap.to('.anim', {
+//   scrollTrigger: {
+//     trigger: '.about__content',
+//     start: 'top 90%',
+//     end: 'bottom 20%',
+//     scrub: true
+//   },
+//   opacity: 1,
+//   top: 0,
+//   duration: 2
+// })
 
-gsap.to('.anim', {
-  scrollTrigger: {
-    trigger: '.about__content',
-    start: 'top 90%',
-    end: 'bottom 20%',
-    scrub: true
-  },
-  opacity: 1,
-  top: 0,
-  duration: 2
-})
+// gsap.to('.about__text', {
+//   scrollTrigger: {
+//     trigger: '.about__content',
+//     start: 'top 90%',
+//     end: 'bottom 20%',
+//     scrub: true
+//   },
+//   opacity: 1,
+//   top: 0,
+//   duration: 2
+// })
 
-gsap.to('.about__text', {
-  scrollTrigger: {
-    trigger: '.about__content',
-    start: 'top 90%',
-    end: 'bottom 20%',
-    scrub: true
-  },
-  opacity: 1,
-  top: 0,
-  duration: 2
-})
-
-gsap.to('.about__bottom', {
-  scrollTrigger: {
-    trigger: '.about__content',
-    start: 'top 80%',
-    end: 'bottom 20%',
-    scrub: true
-  },
-  opacity: 1,
-  top: 0,
-  duration: 2
-})
-
-//////////////////////////////////////////////////////////////////////////////////
+// gsap.to('.about__bottom', {
+//   scrollTrigger: {
+//     trigger: '.about__content',
+//     start: 'top 80%',
+//     end: 'bottom 20%',
+//     scrub: true
+//   },
+//   opacity: 1,
+//   top: 0,
+//   duration: 2
+// })
