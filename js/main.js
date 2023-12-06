@@ -42,50 +42,85 @@ gsap.from('.vector__left, .vector__right, .rays', {
   delay: 1
 })
 
-// gsap.from(
-//   [
-//     '.offer__text',
-//     '.offer__links',
-//     '.offer__title-line',
-//     '.sun',
-//     '.lightnings',
-//     '.offer__lines',
-//     '.vector__left',
-//     '.vector__right',
-//     '.rays'
-//   ],
+///////////////////////////////////
+
+gsap.fromTo(
+  '.about__top',
+  {y: 700, opacity: 0},
+  {
+    y: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '80 center',
+      end: 'bottom 90%',
+      markers: true,
+      toggleActions: 'play none none reverse'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.about__text',
+  {y: 700, opacity: 0},
+  {
+    y: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '300 center',
+      toggleActions: 'play none none reverse'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.about__bottom',
+  {y: 700, opacity: 0},
+  {
+    y: 0,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '500 center',
+      toggleActions: 'play none none reverse'
+    }
+  }
+)
+
+// gsap.fromTo(
+//   '.about__text',
+//   {y: 700, opacity: 0},
 //   {
-//     duration: 1,
-//     opacity: 0,
-//     delay: 1
+//     y: 0,
+//     opacity: 1,
+//     duration: 0.9,
+//     scrollTrigger: {
+//       trigger: '.about__content',
+//       start: 'top 200px',
+//       end: 'center 700',
+//       markers: true,
+//       toggleActions: 'play play reverse'
+//     }
 //   }
 // )
 
-///////////////////////////////////
-
-// gsap.to('.about__text', {
-//   scrollTrigger: {
-//     trigger: '.about__content',
-//     start: 'top 90%',
-//     end: 'bottom 20%',
-//     scrub: true
-//   },
-//   opacity: 1,
-//   top: 0,
-//   duration: 2
-// })
-
-// gsap.to('.about__bottom', {
-//   scrollTrigger: {
-//     trigger: '.about__content',
-//     start: 'top 80%',
-//     end: 'bottom 20%',
-//     scrub: true
-//   },
-//   opacity: 1,
-//   top: 0,
-//   duration: 2
-// })
+// gsap.fromTo(
+//   '.about__bottom',
+//   {y: 700, opacity: 0},
+//   {
+//     y: 0,
+//     opacity: 1,
+//     duration: 0.9,
+//     scrollTrigger: {
+//       trigger: '.about__content',
+//       start: 'top 100px',
+//       end: 'center 800',
+//       markers: true,
+//       toggleActions: 'play play reverse'
+//     }
+//   }
+// )
 
 ///////////////////////////////////
 
@@ -147,6 +182,7 @@ if (window.screen.width > 1180) {
     pin: true
   })
 }
+
 ScrollSmoother.create({
   smooth: 1,
   effects: true,
@@ -162,14 +198,3 @@ const activeMenu = () => {
 }
 
 btmMenu.addEventListener('click', activeMenu)
-// gsap.to('.about__top', {
-//   ScrollTrigger: {
-//     trigger: '.about__content',
-//     start: 'center',
-//     markers: true,
-//     scrub: true
-//   },
-//   y: 400,
-
-//   duration: 2
-// })
