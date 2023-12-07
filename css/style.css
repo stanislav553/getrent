@@ -1325,12 +1325,12 @@ body::-webkit-scrollbar {
 
 .places__title {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   font-weight: 700;
   font-size: 48px;
   line-height: 111.5%;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   color: #D5DFE9;
 }
 
@@ -1345,7 +1345,7 @@ body::-webkit-scrollbar {
   z-index: -1;
   position: absolute;
   right: -110px;
-  top: 50%;
+  bottom: -120%;
 }
 
 .places__link {
@@ -1356,31 +1356,34 @@ body::-webkit-scrollbar {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  padding: 0 21px;
+  padding: 0 24px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: max-content;
-  height: 49px;
+  height: 55px;
+  letter-spacing: -0.03em;
 }
 
 .places__img-mountains {
   position: absolute;
-  left: -150px;
-  top: -160px;
+  left: -149px;
+  top: -166px;
+  rotate: -15deg;
 }
 
 .places__img-heart {
   position: absolute;
   right: 45px;
-  top: -180px;
+  top: -247px;
 }
 
 .places__img-photocard {
   position: absolute;
-  bottom: -215px;
-  left: 50px;
+  bottom: -211px;
+  left: 54px;
+  rotate: -26deg;
 }
 
 
