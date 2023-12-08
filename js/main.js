@@ -206,8 +206,7 @@ gsap.fromTo(
     duration: 2,
     scrollTrigger: {
       trigger: '.condition__title',
-      start: 'center center',
-      markers: true
+      start: 'center center'
     }
   }
 )
@@ -401,6 +400,59 @@ gsap.fromTo(
     }
   }
 )
+///////////////////////////////////
+if (window.screen.width > 1180) {
+  gsap.fromTo(
+    '.places',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.places',
+        start: 'center center',
+        scrub: true
+      }
+    }
+  )
+  gsap.fromTo(
+    '.choice__bottom ',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.condition ',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.location__section__img-four',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.places',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.reviews',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.locations',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+}
 
 //////////////////////////////////
 window.onscroll = function () {
@@ -462,12 +514,13 @@ if (window.screen.width > 1180) {
   })
 }
 
-ScrollSmoother.create({
-  smooth: 1,
-  effects: true,
-  smoothTouch: 2
-})
-
+if (window.screen.width > 1180) {
+  ScrollSmoother.create({
+    smooth: 1.5,
+    effects: true,
+    smoothTouch: 2
+  })
+}
 const btmMenu = document.querySelector('.header__burger-btn')
 const menuActive = document.querySelector('.header__menu-content')
 
