@@ -16,7 +16,9 @@ body::-webkit-scrollbar {
 
 
 
-
+#smooth-wrapper {
+  overflow-x: hidden;
+}
 
 
 
@@ -436,7 +438,7 @@ body::-webkit-scrollbar {
   position: absolute;
   top: -25px;
   left: -17px;
-  z-index: -1;
+
 }
 
 .about__text {
@@ -626,7 +628,7 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 20px;
   bottom: -24px;
-  z-index: -1;
+
 }
 
 
@@ -862,7 +864,7 @@ body::-webkit-scrollbar {
 
 .condition__title-stripe {
   bottom: -25px;
-  z-index: -1;
+
 }
 
 .condition__title-marks {
@@ -1224,7 +1226,7 @@ body::-webkit-scrollbar {
 .oval__places {
   right: 42px;
   bottom: -17px;
-  z-index: -1;
+
 }
 
 .line__places {
@@ -1362,7 +1364,7 @@ body::-webkit-scrollbar {
 }
 
 .places__span-img {
-  z-index: -1;
+
   position: absolute;
   right: -110px;
   bottom: -120%;
@@ -2358,7 +2360,7 @@ body::-webkit-scrollbar {
   .header__menu-content {
     background: #0B0D0F;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 115px 20px 90px;
     width: 100%;
     border-radius: 0;
