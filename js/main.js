@@ -48,6 +48,7 @@ gsap.fromTo(
   '.about__top',
   {y: 700, opacity: 0},
   {
+    duration: 1,
     y: 0,
     opacity: 1,
     scrollTrigger: {
@@ -64,6 +65,7 @@ gsap.fromTo(
   '.about__text',
   {y: 700, opacity: 0},
   {
+    duration: 1,
     y: 0,
     opacity: 1,
     scrollTrigger: {
@@ -78,6 +80,7 @@ gsap.fromTo(
   '.about__bottom',
   {y: 700, opacity: 0},
   {
+    duration: 1,
     y: 0,
     opacity: 1,
     scrollTrigger: {
