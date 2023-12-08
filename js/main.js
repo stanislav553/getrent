@@ -55,7 +55,6 @@ gsap.fromTo(
       trigger: '.about__content',
       start: '80 center',
       end: 'bottom 90%',
-      markers: true,
       toggleActions: 'play none none reverse'
     }
   }
@@ -91,42 +90,374 @@ gsap.fromTo(
   }
 )
 
-// gsap.fromTo(
-//   '.about__text',
-//   {y: 700, opacity: 0},
-//   {
-//     y: 0,
-//     opacity: 1,
-//     duration: 0.9,
-//     scrollTrigger: {
-//       trigger: '.about__content',
-//       start: 'top 200px',
-//       end: 'center 700',
-//       markers: true,
-//       toggleActions: 'play play reverse'
-//     }
-//   }
-// )
-
-// gsap.fromTo(
-//   '.about__bottom',
-//   {y: 700, opacity: 0},
-//   {
-//     y: 0,
-//     opacity: 1,
-//     duration: 0.9,
-//     scrollTrigger: {
-//       trigger: '.about__content',
-//       start: 'top 100px',
-//       end: 'center 800',
-//       markers: true,
-//       toggleActions: 'play play reverse'
-//     }
-//   }
-// )
-
 ///////////////////////////////////
 
+gsap.fromTo(
+  '.about__top',
+  {opacity: 1},
+  {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '600 center',
+      end: '130% bottom',
+      scrub: true
+    }
+  }
+)
+
+gsap.fromTo(
+  '.about__text',
+  {opacity: 1},
+  {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '700 center',
+      end: '140% bottom',
+      scrub: true
+    }
+  }
+)
+
+gsap.fromTo(
+  '.about__bottom',
+  {opacity: 1},
+  {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.about__content',
+      start: '850 center',
+      end: '160% bottom',
+      scrub: true
+    }
+  }
+)
+//////////////////////////////////
+
+gsap.fromTo(
+  '.choice__title-span',
+  {opacity: 0},
+  {
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.choice__title-span',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.choice__title-span__lines',
+  {rotate: '-45deg'},
+  {
+    rotate: '0deg',
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.choice__title-span',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.choice__title-span__crown',
+  {rotate: '45deg'},
+  {
+    rotate: '0deg',
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.choice__title-span',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.choice__title-span__oval-top',
+  {rotate: '15deg'},
+  {
+    rotate: '0deg',
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.choice__title-span',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.choice__title-span__oval-bottom',
+  {rotate: '-15deg'},
+  {
+    rotate: '0deg',
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.choice__title-span',
+      start: 'center center'
+    }
+  }
+)
+//////////////////////////////////
+
+gsap.fromTo(
+  '.condition__title',
+  {opacity: 0},
+  {
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.condition__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.condition__title-marks',
+  {rotate: '35deg', y: '-50'},
+  {
+    rotate: 0,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.condition__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.condition__title-stripe',
+  {rotate: '-25deg', x: '-100', y: '20'},
+  {
+    rotate: 0,
+    x: 0,
+    y: 10,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.condition__title',
+      start: 'center center'
+    }
+  }
+)
+//////////////////////////////////
+gsap.fromTo(
+  '.reviews__title-span__heart',
+  {rotate: '-25deg', opacity: 0},
+  {
+    opacity: 1,
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.reviews__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.reviews__title-span__eye',
+  {rotate: '-15deg', opacity: 0},
+  {
+    opacity: 1,
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.reviews__title',
+      start: 'center center'
+    }
+  }
+)
+//////////////////////////////////
+//locations
+gsap.fromTo(
+  '.location__title',
+  {opacity: 0},
+  {
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.location__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.mountains',
+  {rotate: '35deg'},
+  {
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.location__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.line__places',
+  {rotate: '-45deg'},
+  {
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.location__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.photocard',
+  {rotate: '35deg'},
+  {
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.location__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.oval__places',
+  {x: '50', y: '50'},
+  {
+    x: 0,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.location__title',
+      start: 'center center'
+    }
+  }
+)
+//////////////////////////////////
+//places
+gsap.fromTo(
+  '.places__inner',
+  {opacity: 0},
+  {
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.places__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.places__img-heart',
+  {rotate: '-90deg'},
+  {
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.places__title',
+      start: 'center center'
+    }
+  }
+)
+gsap.fromTo(
+  '.places__img-mountains',
+  {rotate: '30deg'},
+  {
+    rotate: '-15deg',
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.places__title',
+      start: 'center center'
+    }
+  }
+)
+gsap.fromTo(
+  '.places__img-photocard',
+  {rotate: '60deg', y: '-100'},
+  {
+    rotate: '-26deg',
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.places__title',
+      start: 'center center'
+    }
+  }
+)
+
+gsap.fromTo(
+  '.places__span-img',
+  {rotate: '30deg', y: '50'},
+  {
+    rotate: 0,
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.places__title',
+      start: 'center center'
+    }
+  }
+)
+///////////////////////////////////
+if (window.screen.width > 1180) {
+  gsap.fromTo(
+    '.places',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.places',
+        start: 'center center',
+        scrub: true
+      }
+    }
+  )
+  gsap.fromTo(
+    '.choice__bottom ',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.condition ',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.location__section__img-four',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.places',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.reviews',
+    {padding: 0},
+    {
+      padding: '0 100',
+      scrollTrigger: {
+        trigger: '.locations',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+}
+
+//////////////////////////////////
 window.onscroll = function () {
   if (window.scrollY >= 200) {
     gsap.to('.offer__service-items', {
@@ -186,12 +517,13 @@ if (window.screen.width > 1180) {
   })
 }
 
-ScrollSmoother.create({
-  smooth: 1,
-  effects: true,
-  smoothTouch: 0.1
-})
-
+if (window.screen.width > 1180) {
+  ScrollSmoother.create({
+    smooth: 1.5,
+    effects: true,
+    smoothTouch: 2
+  })
+}
 const btmMenu = document.querySelector('.header__burger-btn')
 const menuActive = document.querySelector('.header__menu-content')
 
