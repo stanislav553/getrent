@@ -414,6 +414,13 @@ body::-webkit-scrollbar {
   /* opacity: 0; */
 }
 
+.about__top-img {
+
+  width: 100%;
+  max-width: 324px;
+}
+
+
 .about__title-content {
   font-weight: 700;
   font-size: 48px;
@@ -556,7 +563,6 @@ body::-webkit-scrollbar {
 
 .choice {
   background-color: #D5DFE9;
-  padding-bottom: 10px;
   margin-top: -1px;
 }
 
@@ -566,7 +572,8 @@ body::-webkit-scrollbar {
 }
 
 .choice__top {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   min-width: 100%;
   display: flex;
   justify-content: center;
@@ -628,8 +635,10 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 20px;
   bottom: -24px;
-
+  z-index: -1;
 }
+
+
 
 
 
@@ -874,7 +883,9 @@ body::-webkit-scrollbar {
 
 .condition__center,
 .condition__bottom {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+
   width: 100%;
   min-width: 100vw;
   background: #D5DFE9;
@@ -895,6 +906,7 @@ body::-webkit-scrollbar {
 
 .condition__center-content {
   padding: 203px 216px 0;
+  gap: 20px;
 }
 
 
@@ -1094,8 +1106,7 @@ body::-webkit-scrollbar {
 
 .reviews__content-item--img {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -1206,6 +1217,16 @@ body::-webkit-scrollbar {
   margin: 0 auto;
 }
 
+.location__title-span {
+  position: relative;
+}
+
+.location__title-span span {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+}
+
 .mountains,
 .photocard,
 .line__places,
@@ -1224,7 +1245,7 @@ body::-webkit-scrollbar {
 }
 
 .oval__places {
-  right: 42px;
+  right: 7px;
   bottom: -17px;
 
 }
@@ -1559,12 +1580,23 @@ body::-webkit-scrollbar {
     width: 287px;
   }
 
+  .choice__title-span__oval-top svg,
+  .choice__title-span__oval-bottom svg {
+    width: 360px;
+  }
+
+
+
   .choice__content {
     display: block;
   }
 
   .choice__title {
     font-size: 60px;
+  }
+
+  .choice__title-span__crown {
+    width: 96px;
   }
 
   .choice__car {
@@ -1648,6 +1680,12 @@ body::-webkit-scrollbar {
   }
 
 
+  .line__places {
+    top: -52px;
+    right: -40px;
+  }
+
+
 
   .location__section-three,
   .location__section-four {
@@ -1664,6 +1702,10 @@ body::-webkit-scrollbar {
 
 
 
+  .oval__places {
+    max-width: 370px;
+    width: 100%;
+  }
 
 
 
@@ -1811,6 +1853,21 @@ body::-webkit-scrollbar {
     font-size: 50px;
   }
 
+  .choice__title-span__crown {
+    bottom: 30px;
+  }
+
+
+  .choice__title-span__oval-top svg,
+  .choice__title-span__oval-bottom svg {
+    width: 292px;
+  }
+
+  .choice__title-span__oval-top,
+  .choice__title-span__oval-bottom {
+    bottom: -27px;
+  }
+
 
   .condition__bottom-content,
   .condition__center-content {
@@ -1869,26 +1926,8 @@ body::-webkit-scrollbar {
     top: 28px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   .location__title {
     font-size: 40px;
-  }
-
-  .mountains {
-    width: 237px;
-    top: -138px;
   }
 
   .photocard {
@@ -1897,8 +1936,10 @@ body::-webkit-scrollbar {
   }
 
 
-
-
+  .line__places {
+    right: 0px;
+    width: 60px;
+  }
 
   .location__section-inner {
     padding: 0 100px 150px;
@@ -1912,19 +1953,9 @@ body::-webkit-scrollbar {
     font-size: 22px;
   }
 
-
-
-
-
   .places__title {
     font-size: 46px;
   }
-
-
-
-
-
-
 
 }
 
@@ -2053,7 +2084,11 @@ body::-webkit-scrollbar {
     width: 84px;
   }
 
-
+  .mountains {
+    width: 220px;
+    top: -132px;
+    left: 50px;
+  }
 
 
   .footer__content {
@@ -2083,6 +2118,13 @@ body::-webkit-scrollbar {
   .choice__title-span__choice {
     display: block;
   }
+
+  .choice__title-span__lightnings {
+    width: 75px;
+    bottom: 18px;
+    right: -94px;
+  }
+
 
   .condition__title {
     font-size: 56px;
@@ -2120,15 +2162,15 @@ body::-webkit-scrollbar {
   }
 
   .mountains {
-    width: 226px;
-    top: -132px;
-    left: 251px;
+    width: 208px;
+    top: -123px;
+    left: 40px;
   }
 
   .photocard {
-    width: 138px;
-    bottom: -142px;
-    left: 56px;
+    width: 115px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .location__section-inner {
@@ -2153,14 +2195,14 @@ body::-webkit-scrollbar {
   }
 
   .places__img-mountains {
-    width: 220px;
+    width: 210px;
     left: -80px;
   }
 
   .places__span-img {
-    width: 90px;
-    right: -94px;
-    top: 30%;
+    width: 84px;
+    right: -99px;
+    top: -97%;
   }
 
   .places__img-photocard {
@@ -2170,7 +2212,7 @@ body::-webkit-scrollbar {
 
   .places__img-heart {
     width: 82px;
-    top: -162px;
+    top: -220px;
   }
 
   .footer__content {
@@ -2186,6 +2228,7 @@ body::-webkit-scrollbar {
     margin-bottom: 48px;
     flex-direction: column;
     gap: 65px;
+    padding: 0;
   }
 
   .choice__car {
@@ -2255,15 +2298,17 @@ body::-webkit-scrollbar {
   }
 
   .mountains {
-    width: 215px;
-    top: -129px;
-    left: 170px;
+    width: 184px;
+    top: -116px;
+    left: 28px;
   }
 
   .photocard {
     width: 126px;
-    bottom: -135px;
-    left: 66px;
+  }
+
+  .line__places {
+    width: 50px;
   }
 
   .location__section-inner {
@@ -2307,15 +2352,15 @@ body::-webkit-scrollbar {
   }
 
   .places__img-mountains {
-    width: 200px;
-    left: -50px;
-    top: -130px;
+    width: 180px;
+    left: -41px;
+    top: -131px;
   }
 
   .places__span-img {
-    width: 85px;
-    right: -79px;
-    top: -30%;
+    width: 57px;
+    right: -65px;
+    top: -63%;
   }
 
   .places__img-photocard {
@@ -2382,6 +2427,27 @@ body::-webkit-scrollbar {
     font-size: 36px;
   }
 
+  .choice__title-span__crown {
+    bottom: 27px;
+    width: 84px;
+    right: 6px;
+  }
+
+  .choice__title-span__lightnings {
+    width: 53px;
+    bottom: 13px;
+    right: -44px;
+  }
+
+
+
+  .choice__title-span__lines {
+    width: 50px;
+    left: -20px;
+    top: -17px;
+  }
+
+
   .offer__title-line {
     width: 185px;
   }
@@ -2402,7 +2468,6 @@ body::-webkit-scrollbar {
   }
 
   .sun {
-
     bottom: 57px;
   }
 
@@ -2443,6 +2508,16 @@ body::-webkit-scrollbar {
     bottom: -86px;
   }
 
+  .choice__title-span__oval-top svg,
+  .choice__title-span__oval-bottom svg {
+    width: 226px;
+  }
+
+  .choice__title-span__oval-top,
+  .choice__title-span__oval-bottom {
+    bottom: -30px;
+  }
+
   .choice__car {
     padding: 60px 0 50px;
   }
@@ -2453,7 +2528,7 @@ body::-webkit-scrollbar {
   }
 
   .condition__title {
-    line-height: 125.5%;
+    line-height: 132.5%;
     letter-spacing: 0px;
     max-width: 300px;
   }
@@ -2465,13 +2540,13 @@ body::-webkit-scrollbar {
 
   .condition__title-stripe {
     width: 199px;
-    bottom: 46px;
+    bottom: 49px;
     right: 50px;
   }
 
   .condition__bottom-content,
   .condition__center-content {
-    padding: 36px;
+    padding: 36px 10px;
   }
 
   .reviews__title {
@@ -2515,8 +2590,10 @@ body::-webkit-scrollbar {
 
   .photocard {
     width: 96px;
-    bottom: -99px;
-    left: 160px;
+  }
+
+  .line__places {
+    width: 40px;
   }
 
   .location__section-inner {
@@ -2548,8 +2625,8 @@ body::-webkit-scrollbar {
 
   .places__img-mountains {
     width: 160px;
-    left: 0px;
-    top: -105px;
+    left: -34px;
+    top: -124px;
   }
 
   .places__img-photocard {
@@ -2609,7 +2686,7 @@ body::-webkit-scrollbar {
 
 
   .choice__car {
-    padding: 0 0 10px;
+    padding: 0 0 50px;
   }
 
   .car__name {
@@ -2717,8 +2794,7 @@ body::-webkit-scrollbar {
 
   .photocard {
     width: 79px;
-    bottom: -81px;
-    left: 93px;
+    bottom: -111px;
   }
 
 
@@ -2774,4 +2850,10 @@ body::-webkit-scrollbar {
 
 
 
+}
+
+@media (max-width: 360px) {
+  .sun {
+    right: -56%;
+  }
 }
