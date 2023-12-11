@@ -12,17 +12,9 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-
-
-
-
 #smooth-wrapper {
   overflow-x: hidden;
 }
-
-
-
-
 
 .header__content {
   position: fixed;
@@ -132,30 +124,9 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-
 .header__menu-buttons {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .offer {
   background-color: #000000;
@@ -381,18 +352,6 @@ body::-webkit-scrollbar {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .about {
   background-color: #000000;
 }
@@ -410,8 +369,6 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  /* top: 70vh; */
-  /* opacity: 0; */
 }
 
 .about__top-img {
@@ -419,7 +376,6 @@ body::-webkit-scrollbar {
   width: 100%;
   max-width: 324px;
 }
-
 
 .about__title-content {
   font-weight: 700;
@@ -445,7 +401,6 @@ body::-webkit-scrollbar {
   position: absolute;
   top: -25px;
   left: -17px;
-
 }
 
 .about__text {
@@ -453,8 +408,6 @@ body::-webkit-scrollbar {
   margin: 0 auto 84px;
   padding: 0 100px 0 0;
   position: relative;
-  /* top: 50vh; */
-  /* opacity: 0;  */
 }
 
 .about__text-inner {
@@ -478,8 +431,6 @@ body::-webkit-scrollbar {
   line-height: 140%;
   color: #FFFFFF;
   position: relative;
-  /* top: 50vh; */
-  /* opacity: 0; */
 }
 
 .about__possibilities-departure,
@@ -506,12 +457,9 @@ body::-webkit-scrollbar {
   font-weight: 100;
 }
 
-
-
 .about__possibilities-departure-text {
   word-spacing: -2px;
 }
-
 
 .about__possibilities-departure::before {
   content: url("../images/flagGeorgia.png");
@@ -537,7 +485,6 @@ body::-webkit-scrollbar {
   bottom: 24px;
   right: -21px;
 }
-
 
 .about__possibilities-accessories__img-start {
   position: absolute;
@@ -837,7 +784,6 @@ body::-webkit-scrollbar {
 
 .condition__title-stripe {
   bottom: -25px;
-
 }
 
 .condition__title-marks {
@@ -1175,7 +1121,6 @@ body::-webkit-scrollbar {
 .oval__places {
   right: 7px;
   bottom: -17px;
-
 }
 
 .line__places {
@@ -1307,7 +1252,6 @@ body::-webkit-scrollbar {
 }
 
 .places__span-img {
-
   position: absolute;
   right: -110px;
   bottom: -120%;
@@ -1441,7 +1385,6 @@ body::-webkit-scrollbar {
 .footer__lightness {
   bottom: -48px;
   left: -73px;
-
 }
 
 .footer__lightness svg {
@@ -1452,7 +1395,6 @@ body::-webkit-scrollbar {
   top: 37px;
   right: -14px;
 }
-
 
 .footer__lines {
   top: -20px;
@@ -1474,9 +1416,6 @@ body::-webkit-scrollbar {
   transition: color 2s;
   line-height: 111.5%;
 }
-
-
-
 
 .color-dev,
 .footer__lightness svg path,
@@ -1552,8 +1491,6 @@ body::-webkit-scrollbar {
   fill: #ffffff;
 }
 
-
-
 @media (max-width: 1180px) {
   .logo {
     width: 140px;
@@ -1580,8 +1517,6 @@ body::-webkit-scrollbar {
   .choice__title-span__oval-bottom svg {
     width: 360px;
   }
-
-
 
   .choice__content {
     display: block;
@@ -1675,37 +1610,24 @@ body::-webkit-scrollbar {
     bottom: -143px;
   }
 
-
   .line__places {
     top: -52px;
     right: -40px;
   }
-
-
 
   .location__section-three,
   .location__section-four {
     display: none;
   }
 
-
-
-
-
   .location__section-inner {
     padding: 0 100px 150px;
   }
-
-
 
   .oval__places {
     max-width: 370px;
     width: 100%;
   }
-
-
-
-
 }
 
 @media (max-width: 1028px) {
@@ -1853,7 +1775,6 @@ body::-webkit-scrollbar {
     bottom: 30px;
   }
 
-
   .choice__title-span__oval-top svg,
   .choice__title-span__oval-bottom svg {
     width: 292px;
@@ -1863,7 +1784,6 @@ body::-webkit-scrollbar {
   .choice__title-span__oval-bottom {
     bottom: -27px;
   }
-
 
   .condition__bottom-content,
   .condition__center-content {
@@ -1882,7 +1802,6 @@ body::-webkit-scrollbar {
     font-size: 40px;
   }
 
-
   .condition__bottom-items,
   .condition__bottom-foreigners,
   .condition__bottom-documents,
@@ -1896,19 +1815,9 @@ body::-webkit-scrollbar {
     padding: 20px;
   }
 
-
-
-
-
-
-
   .reviews__title {
     font-size: 60px;
   }
-
-
-
-
 
   .reviews__title-span:first-child img {
     left: 436px;
@@ -1931,7 +1840,6 @@ body::-webkit-scrollbar {
     bottom: -143px;
   }
 
-
   .line__places {
     right: 0px;
     width: 60px;
@@ -1952,7 +1860,6 @@ body::-webkit-scrollbar {
   .places__title {
     font-size: 46px;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -1978,14 +1885,9 @@ body::-webkit-scrollbar {
     padding: 100px 0 100px;
   }
 
-
   .list__cars {
     padding: 0 10px;
   }
-
-
-
-
 
   .condition__title {
     font-size: 60px;
@@ -2000,19 +1902,15 @@ body::-webkit-scrollbar {
     width: 240px;
   }
 
-
-
   .condition__bottom-title,
   .condition__center-title {
     margin-bottom: 20px;
   }
 
-
   .condition__bottom-content,
   .condition__center-content {
     flex-direction: column;
   }
-
 
   .condition__bottom-items,
   .condition__bottom-foreigners,
@@ -2048,10 +1946,6 @@ body::-webkit-scrollbar {
   .location__section-title__subst {
     font-size: 20px;
   }
-
-
-
-
 
   .places__content {
     padding: 40px 60px;
@@ -2105,10 +1999,7 @@ body::-webkit-scrollbar {
   .footer__bottom {
     padding: 0;
   }
-
-
 }
-
 
 @media (max-width: 747px) {
   .choice__title-span__choice {
@@ -2120,7 +2011,6 @@ body::-webkit-scrollbar {
     bottom: 18px;
     right: -94px;
   }
-
 
   .condition__title {
     font-size: 56px;
@@ -2214,9 +2104,6 @@ body::-webkit-scrollbar {
   .footer__content {
     padding: 60px 20px;
   }
-
-
-
 }
 
 @media (max-width: 620px) {
@@ -2251,12 +2138,10 @@ body::-webkit-scrollbar {
     padding: 60px;
   }
 
-
   .reviews__content {
     padding: 0;
     border-radius: 0 0 30px 30px;
   }
-
 
   .reviews__title-content {
     height: 100vh;
@@ -2280,7 +2165,6 @@ body::-webkit-scrollbar {
     width: 84px;
     top: 17px;
   }
-
 
   .reviews__content-items {
     flex-direction: column;
@@ -2319,26 +2203,6 @@ body::-webkit-scrollbar {
     font-size: 16px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .places__content {
     padding: 40px;
   }
@@ -2368,24 +2232,7 @@ body::-webkit-scrollbar {
     width: 79px;
     top: -127px;
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 576px) {
   .logo {
@@ -2435,14 +2282,11 @@ body::-webkit-scrollbar {
     right: -44px;
   }
 
-
-
   .choice__title-span__lines {
     width: 50px;
     left: -20px;
     top: -17px;
   }
-
 
   .offer__title-line {
     width: 185px;
@@ -2602,15 +2446,6 @@ body::-webkit-scrollbar {
     font-size: 30px;
   }
 
-
-
-
-
-
-
-
-
-
   .places__content {
     padding: 40px;
   }
@@ -2629,12 +2464,6 @@ body::-webkit-scrollbar {
     width: 100px;
     bottom: -146px;
   }
-
-
-
-
-
-
 
   .footer__content {
     padding: 60px 40px;
@@ -2665,8 +2494,6 @@ body::-webkit-scrollbar {
     justify-content: center;
   }
 
-
-
 }
 
 @media (max-width: 420px) {
@@ -2678,8 +2505,6 @@ body::-webkit-scrollbar {
   .offer__link {
     width: 100%;
   }
-
-
 
   .choice__car {
     padding: 0 0 50px;
@@ -2719,9 +2544,6 @@ body::-webkit-scrollbar {
     font-size: 16px;
   }
 
-
-
-
   .condition__bottom-content,
   .condition__center-content {
     padding: 10px;
@@ -2747,18 +2569,14 @@ body::-webkit-scrollbar {
     padding: 20px;
   }
 
-
-
   .reviews__title {
     font-size: 35px;
   }
-
 
   .reviews__title-span:first-child img {
     left: 243px;
     width: 55px;
     top: -39px;
-
   }
 
   .reviews__title-span:last-child img {
@@ -2767,16 +2585,9 @@ body::-webkit-scrollbar {
     top: 34px;
   }
 
-
   .reviews__link {
     font-size: 18px;
   }
-
-
-
-
-
-
 
   .location__title {
     font-size: 28px;
@@ -2793,8 +2604,6 @@ body::-webkit-scrollbar {
     bottom: -111px;
   }
 
-
-
   .location__section-inner {
     padding: 0 10px 90px;
   }
@@ -2802,8 +2611,6 @@ body::-webkit-scrollbar {
   .location__section-road {
     max-width: 100%;
   }
-
-
 
   .places__content {
     padding: 40px;
@@ -2834,18 +2641,9 @@ body::-webkit-scrollbar {
     right: 0px;
   }
 
-
-
-
-
-
   .footer__content {
     padding: 60px 20px;
   }
-
-
-
-
 }
 
 @media (max-width: 360px) {
