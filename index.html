@@ -15,51 +15,51 @@
 
 <body>
 
-  <header>
-    <div class="header">
-      <div class="header__content">
-        <div class="container">
-          <div class="header__inner">
-            <a class="logo" href="#">
-              <img src="images/logo.png" class="logo" alt="logo">
-            </a>
-            <div class="header__menu">
-              <button class="header__burger-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <div class="header__menu-content menu__active">
-                <nav class="menu ">
-                  <ul class="menu-list">
-                    <li class="menu__list-item">
-                      <a class="menu__list-link" href="#about">О нас</a>
-                    </li>
-                    <li class="menu__list-item">
-                      <a class="menu__list-link" href="#">Автопарк</a>
-                    </li>
-                    <li class="menu__list-item">
-                      <a class="menu__list-link" href="#">Условия аренды</a>
-                    </li>
-                    <li class="menu__list-item">
-                      <a class="menu__list-link" href="#">Интересные места</a>
-                    </li>
-                    <li class="menu__list-item">
-                      <a class="menu__list-link" href="#">Контакты</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="header__menu-buttons">
-                  <a class="header__menu-button header__menu-button-choice" href="#">Выбрать авто</a>
-                  <a class="header__menu-button header__menu-button-phone" href="tel:+79999999999">+7 (999) 999
-                    99-99</a>
-                </div>
+  <header class="header">
+
+    <div class="header__content">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="images/logo.png" class="logo" alt="logo">
+          </a>
+          <div class="header__menu">
+            <button class="header__burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="header__menu-content menu__active">
+              <nav class="menu ">
+                <ul class="menu-list">
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#about">О нас</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Автопарк</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Условия аренды</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Интересные места</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__menu-buttons">
+                <a class="header__menu-button header__menu-button-choice" href="#">Выбрать авто</a>
+                <a class="header__menu-button header__menu-button-phone" href="tel:+79999999999">+7 (999) 999
+                  99-99</a>
               </div>
             </div>
-            <a class="phone" href="tel:+79999999999">+7 (999) 999 99-99</a>
           </div>
+          <a class="phone" href="tel:+79999999999">+7 (999) 999 99-99</a>
         </div>
       </div>
+    </div>
   </header>
 
   <div id="smooth-wrapper">
@@ -130,8 +130,17 @@
                 <div class="about__title">
                   <h2 class="about__title-content">Кто <span>мы?</span></h2>
                   <img class="about__title-img" src="images/aboutStroke.svg" alt="oval">
+
+
+
                 </div>
-                <img class="about__top-img" src="images/photo.png" alt="photo">
+
+                <video class="about__top-img" loop="" autoplay="" muted="" loading="lazy" preload="auto" id="video"
+                  playsinline="">
+                  <source src="https://get-rent.ru/wp-content/themes/getrent/assets/video/00103.mp4" type="video/mp4">
+                </video>
+
+
               </div>
               <div class="about__text">
                 <p class="about__text-inner">Команда специалистов, миссией которых является организация оперативного  и
@@ -154,6 +163,7 @@
                       выезд</span> в Грузию и  в другие страны за территорией
                     РФ
                   </p>
+
                   <img class="about__possibilities-departure__img-flag" src="images/flagAbout.svg" alt="flagAbout">
                 </div>
                 <div class="about__possibilities-accessories">
@@ -317,11 +327,11 @@
                 <ul class="condition__items">
                   <li class="condition__item condition__item-erfahrung">
                     <img class="condition__item-img" src="images/documentPeople.svg" alt="people">
-                    Стаж вождения от 3х лет
+                    <span>Стаж вождения от 3х лет</span>
                   </li>
                   <li class="condition__item condition__item-age">
                     <img class="condition__item-img" src="images/documentLightning.svg" alt="lightning">
-                    Возраст от 22х лет
+                    <span>Возраст от 22х лет</span>
                   </li>
                 </ul>
               </div>
@@ -339,11 +349,11 @@
                   <ul class="condition__bottom-items">
                     <li class="condition__bottom-item condition__item-rechte">
                       <img class="condition__bottom-item-img" src="images/rights.svg" alt="rights">
-                      Водительское удостоверение
+                      <span>Водительское удостоверение</span>
                     </li>
                     <li class="condition__bottom-item condition__bottom-item-passport">
                       <img class="condition__bottom-item-img" src="images/passport.svg" alt="passport">
-                      Паспорт Российской Федерации
+                      <span>Паспорт Российской Федерации</span>
                     </li>
                   </ul>
                   <div class="condition__bottom-foreigners">

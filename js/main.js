@@ -53,7 +53,7 @@ gsap.fromTo(
     opacity: 1,
     scrollTrigger: {
       trigger: '.about__content',
-      start: '80 center',
+      start: 'top 60%',
       end: 'bottom 90%',
       toggleActions: 'play none none reverse'
     }
@@ -69,7 +69,7 @@ gsap.fromTo(
     opacity: 1,
     scrollTrigger: {
       trigger: '.about__content',
-      start: '300 center',
+      start: '150 center',
       toggleActions: 'play none none reverse'
     }
   }
@@ -84,7 +84,7 @@ gsap.fromTo(
     opacity: 1,
     scrollTrigger: {
       trigger: '.about__content',
-      start: '500 center',
+      start: '300 center',
       toggleActions: 'play none none reverse'
     }
   }
@@ -462,11 +462,11 @@ window.onscroll = function () {
   if (window.scrollY >= 200) {
     gsap.to('.offer__service-items', {
       opacity: 1,
-      duration: 2
+      duration: 1.5
     })
 
     gsap.to('.offer__service-item', {
-      duration: 2,
+      duration: 1.5,
       backdropFilter: 'blur(12px)'
     })
   }
@@ -533,3 +533,14 @@ const activeMenu = () => {
 }
 
 btmMenu.addEventListener('click', activeMenu)
+
+btmMenu.addEventListener('click', () => {
+  if (
+    window.screen.width < 576 &&
+    btmMenu.classList.contains('header__burger-btn__active')
+  ) {
+    document.body.classList.add('body__scroll')
+  } else {
+    document.body.classList.remove('body__scroll')
+  }
+})
