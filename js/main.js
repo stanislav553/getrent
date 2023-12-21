@@ -455,6 +455,19 @@ if (window.screen.width > 1180) {
       }
     }
   )
+
+  gsap.fromTo(
+    '.reviews__content-items',
+    {padding: '0 35 0 135'},
+    {
+      padding: '0 35',
+      scrollTrigger: {
+        trigger: '.locations',
+        start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
 }
 
 //////////////////////////////////
