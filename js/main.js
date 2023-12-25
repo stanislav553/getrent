@@ -270,6 +270,21 @@ gsap.fromTo(
     }
   }
 )
+
+gsap.fromTo(
+  '.reviews__title-oval',
+  {rotate: '-15deg', opacity: 0},
+  {
+    opacity: 1,
+    rotate: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.reviews__title',
+      start: 'center center'
+    }
+  }
+)
+
 //////////////////////////////////
 //locations
 gsap.fromTo(
@@ -458,7 +473,7 @@ if (window.screen.width > 1180) {
 
   gsap.fromTo(
     '.reviews__content-items',
-    {padding: '0 35 0 135'},
+    {padding: '0 135'},
     {
       padding: '0 35',
       scrollTrigger: {

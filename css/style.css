@@ -100,6 +100,7 @@ body {
   overflow-x: hidden;
 }
 
+
 body::-webkit-scrollbar {
   width: 0;
 }
@@ -226,10 +227,13 @@ body::-webkit-scrollbar {
   transition: background-color 1s;
 }
 
-.phone:hover {
+
+.car__item-link:hover,
+.phone:hover,
+.offer__link-choice_car:hover,
+.places__link:hover {
   background-color: #4DCAA4;
 }
-
 
 .header__menu-buttons {
   display: none;
@@ -328,9 +332,7 @@ body::-webkit-scrollbar {
   outline: 0;
 }
 
-.offer__link-choice_car:hover {
-  background-color: #4DCAA4;
-}
+
 
 .offer__link-see__video {
   cursor: pointer;
@@ -845,6 +847,7 @@ body::-webkit-scrollbar {
   line-height: normal;
   color: #1D1F23;
   letter-spacing: -0.46px;
+  transition: background-color 0.5s;
 }
 
 .car__item-price {
@@ -903,9 +906,18 @@ body::-webkit-scrollbar {
   line-height: 111.5%;
   letter-spacing: -1px;
   position: relative;
+  display: flex;
+  gap: 10px;
 }
 
-.condition__title-marks,
+.condition__title-span:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
 .condition__title-stripe {
   position: absolute;
 }
@@ -918,6 +930,8 @@ body::-webkit-scrollbar {
   right: -81px;
   top: -9px;
 }
+
+
 
 .condition__center,
 .condition__bottom {
@@ -1068,7 +1082,6 @@ body::-webkit-scrollbar {
   gap: 24px;
   border-radius: 30px;
   border: 3px dashed #BCCAD9;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
   color: #0B0D0F;
   font-family: Lato;
   font-size: 18px;
@@ -1086,7 +1099,7 @@ body::-webkit-scrollbar {
 .reviews__content {
   background-color: #D5DFE9;
   width: 100%;
-  padding-top: 150px;
+  padding: 150px 0 60px;
   min-height: 100vh;
   border-radius: 0 0 60px 60px;
 }
@@ -1109,6 +1122,8 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+
+
 .reviews__title-span:first-child img {
   position: absolute;
   top: -54px;
@@ -1121,10 +1136,17 @@ body::-webkit-scrollbar {
   left: -89px;
 }
 
+
+.reviews__title-oval {
+  position: absolute;
+  right: -6px;
+  top: 14px;
+}
+
+
 .reviews__content-items {
   margin-bottom: 34px;
-
-  padding: 0 35px 0 135px;
+  padding: 0 135px;
   display: flex;
   gap: 30px;
   overflow-x: scroll;
@@ -1161,7 +1183,6 @@ body::-webkit-scrollbar {
 .reviews__item-text--content {
   color: #000;
   text-align: center;
-  font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1432,10 +1453,6 @@ body::-webkit-scrollbar {
   height: 55px;
   letter-spacing: -0.03em;
   transition: background-color 1s;
-}
-
-.places__link:hover {
-  background-color: #4DCAA4;
 }
 
 .places__img-mountains {
@@ -1798,6 +1815,10 @@ body::-webkit-scrollbar {
 
   }
 
+  .header__inner {
+    padding: 20px 12px 20px 29px;
+  }
+
   .header__burger-btn {
     display: block;
     z-index: 2;
@@ -1826,7 +1847,7 @@ body::-webkit-scrollbar {
   .menu {
     border-radius: 0;
     background-color: #0B0D0F;
-    padding: 0 20px 20px;
+    padding: 0 20px 0 0;
     background-color: transparent;
   }
 
@@ -1839,6 +1860,7 @@ body::-webkit-scrollbar {
   .menu__list-link {
     font-size: 24px;
     line-height: 29px;
+    padding: 13px 21px 13px 0;
   }
 
   .header__menu-buttons {
@@ -2008,6 +2030,19 @@ body::-webkit-scrollbar {
     top: 28px;
   }
 
+  .reviews__title-oval {
+    top: 13px;
+
+  }
+
+  .reviews__title-oval svg {
+    width: 178px;
+  }
+
+
+
+
+
   .location__title {
     font-size: 40px;
   }
@@ -2117,6 +2152,21 @@ body::-webkit-scrollbar {
     top: 24px;
   }
 
+
+  .reviews__title-oval {
+    top: 11px;
+    right: -12px;
+  }
+
+  .reviews__title-oval svg {
+    width: 170px;
+  }
+
+
+
+
+
+
   .location__section-inner {
     padding: 0 70px 120px;
   }
@@ -2224,6 +2274,24 @@ body::-webkit-scrollbar {
     width: 92px;
     top: 20px;
   }
+
+
+
+
+
+  .reviews__title-oval {
+    top: 9px;
+    right: -8px;
+  }
+
+  .reviews__title-oval svg {
+    width: 160px;
+  }
+
+
+
+
+
 
   .location__title {
     font-size: 36px;
@@ -2347,6 +2415,22 @@ body::-webkit-scrollbar {
     width: 84px;
     top: 17px;
   }
+
+
+
+
+  .reviews__title-oval {
+    top: 3px;
+    right: -7px;
+  }
+
+  .reviews__title-oval svg {
+    width: 136px;
+  }
+
+
+
+
 
   .reviews__content-items {
     flex-direction: column;
@@ -2558,6 +2642,30 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
+
+
+
+
+
+  .condition__title {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .condition__title-span:last-child {
+    display: flex;
+    justify-content: end;
+  }
+
+
+
+
+
+
+
+
+
   .condition__title {
 
     letter-spacing: 0px;
@@ -2595,6 +2703,17 @@ body::-webkit-scrollbar {
     width: 76px;
     top: 32px;
   }
+
+  .reviews__title-oval {
+    top: -1px;
+    right: -4px;
+  }
+
+  .reviews__title-oval svg {
+    width: 116px;
+  }
+
+
 
   .reviews__content-item {
     padding: 20px 16px 20px;
@@ -2775,6 +2894,18 @@ body::-webkit-scrollbar {
     width: 70px;
     top: 34px;
   }
+
+
+  .reviews__title-oval {
+    top: -4px;
+    right: -2px;
+  }
+
+  .reviews__title-oval svg {
+    width: 100px;
+  }
+
+
 
   .reviews__link {
     font-size: 18px;
