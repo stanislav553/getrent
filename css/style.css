@@ -706,6 +706,8 @@ body::-webkit-scrollbar {
   background-color: #000000;
   min-height: 110vh;
   border-radius: 0 0 60px 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .choice__car {
@@ -713,7 +715,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 172px 0 133px;
+  padding: 0 0 133px;
 }
 
 .list__cars {
@@ -937,7 +939,9 @@ body::-webkit-scrollbar {
 .condition__bottom {
   min-height: 100vh;
   height: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-width: 100vw;
   background-color: #D5DFE9;
@@ -954,12 +958,14 @@ body::-webkit-scrollbar {
 }
 
 .condition__center-content {
-  padding: 203px 216px 0;
+  padding: 0 216px 0;
   gap: 20px;
+  display: flex;
+  /* align-items: center; */
 }
 
 .condition__bottom-content {
-  padding: 203px 188px 0;
+  padding: 0 188px 0;
 }
 
 .condition__center-title,
@@ -1012,9 +1018,10 @@ body::-webkit-scrollbar {
   background-color: #BCCAD9;
   border-radius: 30px;
   gap: 21px;
-  padding: 30px 22px 0px 29px;
+  padding: 30px 22px 30px 29px;
   display: flex;
   flex-direction: column;
+  max-height: 328px;
 }
 
 .condition__bottom-documents {
@@ -1065,9 +1072,7 @@ body::-webkit-scrollbar {
 
 
 
-.condition__items {
-  max-height: 328px;
-}
+
 
 .condition__bottom-documents {
   max-height: 439px;
@@ -1809,6 +1814,10 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1028px) {
 
+  .container {
+    padding: 0 20px;
+    overflow: hidden;
+  }
 
   .header {
     background-color: rgba(0, 0, 0, 0.4);
@@ -1954,8 +1963,12 @@ body::-webkit-scrollbar {
   .about__possibilities-departure,
   .about__possibilities-accessories {
     width: 430px;
+    margin-right: 20px;
   }
 
+  .about__possibilities-departure-text {
+    word-spacing: 0px;
+  }
 
   .about__bottom {
     padding: 0 20px;
@@ -2078,7 +2091,7 @@ body::-webkit-scrollbar {
   .about__bottom {
     flex-direction: column;
     gap: 30px;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .about__possibilities-accessories__img-start {
@@ -2096,6 +2109,7 @@ body::-webkit-scrollbar {
 
   .about__text {
     padding: 0;
+    margin-bottom: 50px;
   }
 
   .choice__car {
@@ -2434,9 +2448,10 @@ body::-webkit-scrollbar {
 
   .reviews__content-items {
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 20px;
     align-items: center;
     margin-bottom: 0;
+    gap: 10px;
   }
 
   .location__title {
@@ -2501,6 +2516,13 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 576px) {
+
+
+  .container {
+    padding: 0 30px 77px;
+  }
+
+
   .logo {
     width: 120px;
   }
@@ -2514,10 +2536,19 @@ body::-webkit-scrollbar {
   .header__menu-content {
     background-color: #0B0D0F;
     height: 100%;
-    padding: 115px 20px 90px;
+    padding: 115px 20px 50px;
     width: 100%;
     border-radius: 0;
     overflow: auto;
+  }
+
+
+  .offer__content-inner {
+    padding-top: 316px;
+  }
+
+  .offer__content {
+    border-radius: 0px 0px 24px 24px;
   }
 
 
@@ -2541,9 +2572,9 @@ body::-webkit-scrollbar {
   }
 
   .choice__title-span__lightnings {
-    width: 53px;
-    bottom: 13px;
-    right: -44px;
+    width: 42px;
+    bottom: 9px;
+    right: -39px;
   }
 
   .choice__title-span__lines {
@@ -2594,6 +2625,7 @@ body::-webkit-scrollbar {
 
   .offer__service-items {
     gap: 10px;
+    justify-content: center;
   }
 
   .offer__service-item {
@@ -2625,12 +2657,12 @@ body::-webkit-scrollbar {
 
   .choice__title-span__oval-top svg,
   .choice__title-span__oval-bottom svg {
-    width: 226px;
+    width: 252px;
   }
 
   .choice__title-span__oval-top,
   .choice__title-span__oval-bottom {
-    bottom: -30px;
+    bottom: -28px;
   }
 
   .choice__car {
@@ -2639,11 +2671,25 @@ body::-webkit-scrollbar {
 
   .condition__title-span {
     display: inline-block;
-    width: 100%;
+
   }
 
+  .choice__title-span__oval-top,
+  .choice__title-span__oval-bottom {
+    right: -5px;
+  }
 
+  .list__cars {
+    padding: 0 20px;
+  }
 
+  .car__list-details {
+    padding: 0;
+  }
+
+  .car__item-link {
+    max-width: 100%
+  }
 
 
 
@@ -2669,7 +2715,7 @@ body::-webkit-scrollbar {
   .condition__title {
 
     letter-spacing: 0px;
-    max-width: 300px;
+    max-width: 260px;
   }
 
   .condition__title-marks {
@@ -2685,7 +2731,7 @@ body::-webkit-scrollbar {
 
   .condition__bottom-content,
   .condition__center-content {
-    padding: 36px 10px;
+    padding: 36px 20px;
   }
 
   .reviews__title {
@@ -2746,6 +2792,8 @@ body::-webkit-scrollbar {
     width: 40px;
   }
 
+
+
   .location__section-inner {
     padding: 0 20px 90px;
     flex-direction: column;
@@ -2776,7 +2824,7 @@ body::-webkit-scrollbar {
   }
 
   .footer__content {
-    padding: 60px 40px;
+    padding: 60px 0 0;
   }
 
   .footer__links {
@@ -2856,7 +2904,7 @@ body::-webkit-scrollbar {
 
   .condition__bottom-content,
   .condition__center-content {
-    padding: 10px;
+    padding: 20px;
   }
 
   .condition__bottom-title,
@@ -2966,9 +3014,6 @@ body::-webkit-scrollbar {
     right: 0px;
   }
 
-  .footer__content {
-    padding: 60px 24px;
-  }
 }
 
 @media (max-width: 360px) {

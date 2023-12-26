@@ -209,7 +209,7 @@ gsap.fromTo(
     duration: 2,
     scrollTrigger: {
       trigger: '.condition__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -223,7 +223,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.condition__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -238,7 +238,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.condition__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -295,7 +295,7 @@ gsap.fromTo(
     duration: 2,
     scrollTrigger: {
       trigger: '.location__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -308,7 +308,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.location__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -321,7 +321,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.location__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -334,7 +334,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.location__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -348,7 +348,7 @@ gsap.fromTo(
     duration: 1,
     scrollTrigger: {
       trigger: '.location__title',
-      start: 'center center'
+      start: 'center 70%'
     }
   }
 )
@@ -541,13 +541,14 @@ if (window.screen.width > 1180) {
     start: 'top top',
     end: 'bottom',
     scrub: 1,
-    pin: true
+    pin: true,
+    ease: 'inOut'
   })
 }
 
 if (window.screen.width > 1180) {
   ScrollSmoother.create({
-    smooth: 1.5,
+    smooth: 3,
     effects: true,
     smoothTouch: 2
   })
