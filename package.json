@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "gsap": "^3.12.2"
+    "gsap": "^3.12.2",
+    "type": "module"
   },
   "devDependencies": {
     "typescript": "^5.2.2"

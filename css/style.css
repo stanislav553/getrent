@@ -100,15 +100,16 @@ body {
   overflow-x: hidden;
 }
 
-
-body::-webkit-scrollbar {
-  width: 0;
-}
-
 .body__scroll {
   overflow: hidden;
   touch-action: none;
 }
+
+
+
+
+
+
 
 
 .header {
@@ -116,13 +117,6 @@ body::-webkit-scrollbar {
   z-index: 1000;
   position: fixed;
 }
-
-
-
-
-
-
-
 
 .header__inner {
   padding: 40px 12px 20px 29px;
@@ -628,7 +622,7 @@ body::-webkit-scrollbar {
 
 
 .choice {
-  background-color: #D5DFE9;
+  background-color: black;
   margin-top: -1px;
   overflow-x: hidden;
 }
@@ -698,7 +692,9 @@ body::-webkit-scrollbar {
 }
 
 .choice__bottom {
-  background-color: #D5DFE9;
+  margin-left: -1px;
+  /* background-color: #D5DFE9; */
+  /* background-color: black; */
   min-width: 100%;
 }
 
@@ -722,10 +718,12 @@ body::-webkit-scrollbar {
   display: flex;
   gap: 30px;
   color: #D5DFE9;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .item__car {
@@ -884,6 +882,7 @@ body::-webkit-scrollbar {
 .condition {
   background-color: #D5DFE9;
   min-height: 100vh;
+  margin-top: -2px;
 }
 
 .condition__content {
@@ -1096,9 +1095,12 @@ body::-webkit-scrollbar {
   font-size: 20.1px;
 }
 
+
+
 .reviews {
-  background-color: #000000;
-  min-height: 110vh;
+  background-color: black;
+  /* min-height: 110vh; */
+
 }
 
 .reviews__content {
@@ -1398,6 +1400,7 @@ body::-webkit-scrollbar {
   min-height: 110vh;
   height: 110vh;
   background-color: #0C0D10;
+  margin-top: -1px;
 }
 
 .places__content {
@@ -1482,7 +1485,8 @@ body::-webkit-scrollbar {
 
 .footer {
   background-color: #0C0D10;
-  height: 266px;
+  height: 270px;
+  margin-top: -1px;
 }
 
 .footer__content {
@@ -1695,6 +1699,10 @@ body::-webkit-scrollbar {
     width: 287px;
   }
 
+  .choice {
+    background-color: #D5DFE9;
+  }
+
   .choice__title-span__oval-top svg,
   .choice__title-span__oval-bottom svg {
     width: 360px;
@@ -1719,6 +1727,7 @@ body::-webkit-scrollbar {
   .choice__top {
     border-radius: 0%;
   }
+
 
   .condition__content {
     display: block;

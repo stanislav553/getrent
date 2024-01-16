@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-
 gsap.from('.offer__text, .offer__links', {
   duration: 1,
   delay: 1,
@@ -433,13 +432,26 @@ if (window.screen.width > 1180) {
     }
   )
   gsap.fromTo(
-    '.choice__bottom ',
+    '.choice__bottom',
     {padding: 0},
     {
       padding: '0 100',
       scrollTrigger: {
         trigger: '.condition ',
         start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.choice__bottom',
+    {backgroundColor: 'black'},
+    {
+      backgroundColor: '#D5DFE9',
+      scrollTrigger: {
+        trigger: '.choice__bottom ',
+        start: 'bottom -40px',
         scrub: true
       }
     }
@@ -466,6 +478,20 @@ if (window.screen.width > 1180) {
       scrollTrigger: {
         trigger: '.locations',
         start: 'top bottom',
+        scrub: true
+      }
+    }
+  )
+
+  gsap.fromTo(
+    '.reviews',
+    {backgroundColor: '#D5DFE9'},
+    {
+      backgroundColor: 'black',
+      scrollTrigger: {
+        trigger: '.reviews',
+        start: '400 500',
+        end: 'center 800',
         scrub: true
       }
     }
