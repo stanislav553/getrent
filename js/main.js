@@ -590,10 +590,7 @@ const activeMenu = () => {
 btmMenu.addEventListener('click', activeMenu)
 
 btmMenu.addEventListener('click', () => {
-  if (
-    window.screen.width < 576 &&
-    btmMenu.classList.contains('header__burger-btn__active')
-  ) {
+  if (window.screen.width < 576 && btmMenu.classList.contains('header__burger-btn__active')) {
     document.body.classList.add('body__scroll')
   } else {
     document.body.classList.remove('body__scroll')
